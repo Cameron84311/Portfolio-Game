@@ -39,7 +39,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000013254035110}
   - 212: {fileID: 212000010632535572}
-  - 114: {fileID: 114000011140203860}
   m_Layer: 0
   m_Name: Sheild
   m_TagString: Untagged
@@ -91,17 +90,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 3
---- !u!114 &114000011140203860
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012803463488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 612edfb135908984592e5fcab1dd3e7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114000012094149104
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -113,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc472995135b793458d277bb1c712d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Sheild: {fileID: 1000012803463488}
+  sheild: {fileID: 0}
 --- !u!114 &114000013413036154
 MonoBehaviour:
   m_ObjectHideFlags: 1
