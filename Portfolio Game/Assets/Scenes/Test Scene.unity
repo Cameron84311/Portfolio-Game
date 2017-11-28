@@ -189,6 +189,7 @@ GameObject:
   - 212: {fileID: 1361857319}
   - 50: {fileID: 1361857321}
   - 114: {fileID: 1361857322}
+  - 114: {fileID: 1361857323}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -276,6 +277,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+--- !u!114 &1361857323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1361857318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc472995135b793458d277bb1c712d71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sheild: {fileID: 1764874271}
 --- !u!1 &1764874271
 GameObject:
   m_ObjectHideFlags: 0
@@ -285,6 +298,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1764874272}
   - 212: {fileID: 1764874273}
+  - 114: {fileID: 1764874274}
   m_Layer: 0
   m_Name: Sheild
   m_TagString: Untagged
@@ -300,7 +314,7 @@ Transform:
   m_GameObject: {fileID: 1764874271}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1361857320}
@@ -338,3 +352,14 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &1764874274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1764874271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 612edfb135908984592e5fcab1dd3e7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
