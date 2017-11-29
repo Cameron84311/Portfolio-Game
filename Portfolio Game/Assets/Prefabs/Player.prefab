@@ -67,7 +67,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011065961892}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.59, y: 1.03, z: 0}
+  m_LocalPosition: {x: -0.9762013, y: 0.30990535, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -105,12 +105,12 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Points:
     m_Paths:
-    - - {x: 0.5790675, y: 0.44213402}
-      - {x: 0.57701874, y: -0.43764427}
-      - {x: 0.71401566, y: -0.43896052}
-      - {x: 0.8869419, y: -0.12430331}
-      - {x: 0.8863635, y: 0.12327522}
-      - {x: 0.7148169, y: 0.44159082}
+    - - {x: 0.2884465, y: 0.22001982}
+      - {x: 0.28792632, y: -0.2188365}
+      - {x: 0.35265672, y: -0.2182372}
+      - {x: 0.44392306, y: -0.0634453}
+      - {x: 0.4436202, y: 0.06346512}
+      - {x: 0.35692257, y: 0.22216058}
 --- !u!114 &114000012094149104
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -123,6 +123,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sheild: {fileID: 1000014003223554}
+  rotationSpeed: 5
+  joystickDeadzone: 0.2
 --- !u!114 &114000013413036154
 MonoBehaviour:
   m_ObjectHideFlags: 1
