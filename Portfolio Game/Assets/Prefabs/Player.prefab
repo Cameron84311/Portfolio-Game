@@ -54,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014003223554}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.111, y: 0, z: 0}
+  m_LocalPosition: {x: 0.105, y: -0.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -67,7 +67,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011065961892}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.868, y: 0.468, z: 0}
+  m_LocalPosition: {x: -0.868, y: 0.359, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -90,7 +90,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 7
+  m_Constraints: 4
 --- !u!60 &60000012794449192
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -105,14 +105,14 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Points:
     m_Paths:
-    - - {x: -0.15625, y: 0.4375}
-      - {x: -0.15625, y: -0.4375}
-      - {x: -0.028336406, y: -0.4375}
-      - {x: 0.09324288, y: -0.31277034}
-      - {x: 0.15390217, y: -0.13317505}
-      - {x: 0.15625, y: 0.12378371}
-      - {x: 0.094343245, y: 0.3094179}
-      - {x: -0.03303212, y: 0.43984783}
+    - - {x: 0.31338078, y: 0.4375}
+      - {x: 0.31612638, y: -0.43560442}
+      - {x: 0.44009915, y: -0.43578425}
+      - {x: 0.5648541, y: -0.31191972}
+      - {x: 0.6276648, y: -0.12345719}
+      - {x: 0.62698925, y: 0.12472266}
+      - {x: 0.5595582, y: 0.30979288}
+      - {x: 0.43590298, y: 0.43648827}
 --- !u!114 &114000012094149104
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -127,6 +127,8 @@ MonoBehaviour:
   sheild: {fileID: 1000014003223554}
   rotationSpeed: 5
   joystickDeadzone: 0.2
+  sheildDown: {fileID: 21300000, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  sheildOut: {fileID: 21300002, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
 --- !u!114 &114000013413036154
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -168,7 +170,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  m_Sprite: {fileID: 21300002, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -200,8 +202,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 2
-  m_Sprite: {fileID: 21300002, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300004, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
