@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour {
     public Sprite walk5;
     public float animSpeed = 10f;
 	public float moveX;
+	public float waitTime;
 
     void Start()
     {
@@ -36,26 +37,29 @@ public class PlayerMovement : MonoBehaviour {
             spriteRenderer.flipX = false;
         }
 		if (Mathf.Abs (moveDir.x) > Mathf.Abs (moveDir.y)) {
-			speed = Mathf.Abs (moveDir.x);
-			StartCoroutine (waiter (speed));
+			//speed = Mathf.Abs (moveDir.x);
+			StartCoroutine (waiter ());
 		}
 		moveX = Mathf.Abs (moveDir.x);
-    }
-	IEnumerator waiter(float animSpeed)
+	}
+
+
+
+	IEnumerator waiter()
     {
 		while (moveX >= 0) {
             spriteRenderer.sprite = walk0;
 			yield return new WaitForSeconds(animSpeed*(moveX+1));
             spriteRenderer.sprite = walk1;
 			yield return new WaitForSeconds(animSpeed*(moveX+1));
-			//spriteRenderer.sprite = walk2;
-			//yield return new WaitForSeconds(animSpeed*(moveX+1));
-			//spriteRenderer.sprite = walk3;
-			//yield return new WaitForSeconds(animSpeed*(moveX+1));
-			//spriteRenderer.sprite = walk4;
-			//yield return new WaitForSeconds(animSpeed*(moveX+1));
-			//spriteRenderer.sprite = walk5;
-			//yield return new WaitForSeconds(animSpeed*(moveX+1));
+			spriteRenderer.sprite = walk2;
+			yield return new WaitForSeconds(animSpeed*(moveX+1));
+			spriteRenderer.sprite = walk3;
+			yield return new WaitForSeconds(animSpeed*(moveX+1));
+			spriteRenderer.sprite = walk4;
+			yield return new WaitForSeconds(animSpeed*(moveX+1));
+			spriteRenderer.sprite = walk5;
+			yield return new WaitForSeconds(animSpeed*(moveX+1));
         }
     }
 }
