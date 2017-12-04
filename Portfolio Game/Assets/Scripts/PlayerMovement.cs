@@ -3,10 +3,10 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour {
 
-    private Rigidbody2D rb;
     public float speed = 2;
     private SpriteRenderer spriteRenderer;
-    public Sprite walk0;
+	public Sprite idle;
+	public Sprite walk0;
     public Sprite walk1;
     public Sprite walk2;
     public Sprite walk3;
@@ -18,7 +18,6 @@ public class PlayerMovement : MonoBehaviour {
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
@@ -29,16 +28,18 @@ public class PlayerMovement : MonoBehaviour {
 		moveDir.y = Input.GetAxis("Vertical");
         transform.position += moveDir * speed * Time.deltaTime;
         
-        if (moveDir.x <= 0)
+        if (moveDir.x < 0)
         {
             spriteRenderer.flipX = true;
-        } else
+		} else if (moveDir.x > 0)
         {
             spriteRenderer.flipX = false;
         }
 		if (Mathf.Abs (moveDir.x) > Mathf.Abs (moveDir.y)) {
-			//speed = Mathf.Abs (moveDir.x);
+
 			StartCoroutine (waiter ());
+		} else if (moveX == 0) {
+			spriteRenderer.sprite = idle;
 		}
 		moveX = Mathf.Abs (moveDir.x);
 	}
@@ -47,19 +48,32 @@ public class PlayerMovement : MonoBehaviour {
 
 	IEnumerator waiter()
     {
-		while (moveX >= 0) {
-            spriteRenderer.sprite = walk0;
-			yield return new WaitForSeconds(animSpeed*(moveX+1));
-            spriteRenderer.sprite = walk1;
-			yield return new WaitForSeconds(animSpeed*(moveX+1));
-			spriteRenderer.sprite = walk2;
-			yield return new WaitForSeconds(animSpeed*(moveX+1));
-			spriteRenderer.sprite = walk3;
-			yield return new WaitForSeconds(animSpeed*(moveX+1));
-			spriteRenderer.sprite = walk4;
-			yield return new WaitForSeconds(animSpeed*(moveX+1));
-			spriteRenderer.sprite = walk5;
-			yield return new WaitForSeconds(animSpeed*(moveX+1));
+		while (true){
+			
+			if (moveX != 0) {
+				spriteRenderer.sprite = walk0;
+			}
+			yield return new WaitForSeconds (animSpeed);
+			if (moveX != 0) {
+				spriteRenderer.sprite = walk1;
+			}
+			yield return new WaitForSeconds (animSpeed);
+			if (moveX != 0) {
+				spriteRenderer.sprite = walk2;
+			}
+			yield return new WaitForSeconds (animSpeed);
+			if (moveX != 0) {
+				spriteRenderer.sprite = walk3;
+			}
+			yield return new WaitForSeconds (animSpeed);
+			if (moveX != 0) {
+				spriteRenderer.sprite = walk4;
+			}
+			yield return new WaitForSeconds (animSpeed);
+			if (moveX != 0) {
+				spriteRenderer.sprite = walk5;
+			}
+			yield return new WaitForSeconds (animSpeed);
         }
     }
 }
