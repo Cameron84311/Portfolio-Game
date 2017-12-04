@@ -25,7 +25,7 @@ GameObject:
   - 114: {fileID: 114000012094149104}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,8 +127,6 @@ MonoBehaviour:
   sheild: {fileID: 1000014003223554}
   rotationSpeed: 5
   joystickDeadzone: 0.2
-  sheildDown: {fileID: 21300000, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
-  sheildOut: {fileID: 21300002, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
 --- !u!114 &114000013413036154
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -140,7 +138,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6b306b40c71d154ab78c5d3e11a606b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 2
+  idle: {fileID: 21300000, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  walk0: {fileID: 21300002, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  walk1: {fileID: 21300006, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  walk2: {fileID: 21300008, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  walk3: {fileID: 21300010, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  walk4: {fileID: 21300012, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  walk5: {fileID: 21300014, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  animSpeed: 0.04
+  moveX: 0
+  moveY: 0
+  waitTime: 0
 --- !u!212 &212000010356862234
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -170,7 +179,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300002, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
