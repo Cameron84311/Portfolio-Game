@@ -14,11 +14,13 @@ public class PlayerMovement : MonoBehaviour {
     public Sprite walk5;
     public float animSpeed = 10f;
 	public float moveX;
+	public float moveY;
 	public float waitTime;
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+		StartCoroutine (waiter ());
     }
 
     void Update(){
@@ -35,13 +37,11 @@ public class PlayerMovement : MonoBehaviour {
         {
             spriteRenderer.flipX = false;
         }
-		if (Mathf.Abs (moveDir.x) > Mathf.Abs (moveDir.y)) {
-
-			StartCoroutine (waiter ());
-		} else if (moveX == 0) {
+		if (moveX == 0) {
 			spriteRenderer.sprite = idle;
 		}
 		moveX = Mathf.Abs (moveDir.x);
+		moveY = Mathf.Abs (moveDir.y);
 	}
 
 
@@ -50,27 +50,27 @@ public class PlayerMovement : MonoBehaviour {
     {
 		while (true){
 			
-			if (moveX != 0) {
+			if (moveX > moveY) {
 				spriteRenderer.sprite = walk0;
 			}
 			yield return new WaitForSeconds (animSpeed);
-			if (moveX != 0) {
+			if (moveX > moveY) {
 				spriteRenderer.sprite = walk1;
 			}
 			yield return new WaitForSeconds (animSpeed);
-			if (moveX != 0) {
+			if (moveX > moveY) {
 				spriteRenderer.sprite = walk2;
 			}
 			yield return new WaitForSeconds (animSpeed);
-			if (moveX != 0) {
+			if (moveX > moveY) {
 				spriteRenderer.sprite = walk3;
 			}
 			yield return new WaitForSeconds (animSpeed);
-			if (moveX != 0) {
+			if (moveX > moveY) {
 				spriteRenderer.sprite = walk4;
 			}
 			yield return new WaitForSeconds (animSpeed);
-			if (moveX != 0) {
+			if (moveX > moveY) {
 				spriteRenderer.sprite = walk5;
 			}
 			yield return new WaitForSeconds (animSpeed);
