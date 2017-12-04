@@ -1,11 +1,11 @@
 fileFormatVersion: 2
 guid: 2410487a23ac3934d9e8d060ee731456
-timeCreated: 1511970179
+timeCreated: 1512378974
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Knight_Right_Idle_0
-    21300002: Kinght_Right_Idle_1
+    21300000: Knight_Side_Idle_0
+    21300002: Kinght_Side_Idle_1
     21300004: Sheild_0
   serializedVersion: 2
   mipmaps:
@@ -61,7 +61,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Knight_Right_Idle_0
+      name: Knight_Side_Idle_0
       rect:
         serializedVersion: 2
         x: 1
@@ -74,7 +74,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Kinght_Right_Idle_1
+      name: Kinght_Side_Idle_1
       rect:
         serializedVersion: 2
         x: 17

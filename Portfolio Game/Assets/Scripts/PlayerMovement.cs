@@ -5,10 +5,12 @@ public class PlayerMovement : MonoBehaviour {
 
     private Rigidbody2D rb;
     public float speed = 2;
-	
+    private SpriteRenderer spriteRenderer;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
 	void Update(){
@@ -17,15 +19,13 @@ public class PlayerMovement : MonoBehaviour {
 		moveDir.x = Input.GetAxis("Horizontal");
 		moveDir.y = Input.GetAxis("Vertical");
         transform.position += moveDir * speed * Time.deltaTime;
-
-        Debug.Log(rb.velocity.x);
         
-        // if (rb.velocity.x <= 0)
-        //{
-        //     spriteRenderer.flipX = true;
-        // } else
-        //{
-        //    spriteRenderer.flipX = false;
-        //}
+        if (moveDir.x <= 0)
+        {
+            spriteRenderer.flipX = true;
+        } else
+        {
+            spriteRenderer.flipX = false;
+        }
     }
 }
