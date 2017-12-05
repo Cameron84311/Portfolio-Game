@@ -116,6 +116,8 @@ MonoBehaviour:
   animSpeed: 0.08
   moveX: 0
   moveY: 0
+  waitTime: 0
+  acceleration: 0.4
 --- !u!1 &1249032144
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,6 +253,11 @@ Prefab:
         type: 2}
       propertyPath: speed
       value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013413036154, guid: 03ec94c5a7c09d64b8f541dd7bab1e33,
+        type: 2}
+      propertyPath: acceleration
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03ec94c5a7c09d64b8f541dd7bab1e33, type: 2}
