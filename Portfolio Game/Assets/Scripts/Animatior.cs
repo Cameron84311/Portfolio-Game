@@ -12,9 +12,11 @@ public class Animatior : MonoBehaviour {
     public Sprite walk3;
     public Sprite walk4;
     public Sprite walk5;
-    public float animSpeed = 0.2f;
+    public float animSpeed = 0.08f;
     public float moveX;
     public float moveY;
+    public float waitTime;
+    public float acceleration = 0.5f;
 
     void Start()
     {
@@ -38,6 +40,7 @@ public class Animatior : MonoBehaviour {
         }
         moveX = Mathf.Abs(movement.moveX);
         moveY = Mathf.Abs(movement.moveY);
+        waitTime =  (animSpeed * (1/acceleration + 1)/(1/acceleration)) * (1 / (moveX + acceleration));
 	}
     
     IEnumerator waiter()
@@ -48,32 +51,32 @@ public class Animatior : MonoBehaviour {
             {
                 spriteRenderer.sprite = walk0;
             }
-            yield return new WaitForSeconds(animSpeed);
+            yield return new WaitForSeconds(waitTime);
             if (moveX >= moveY && moveX != 0)
             {
                 spriteRenderer.sprite = walk1;
             }
-            yield return new WaitForSeconds(animSpeed);
+            yield return new WaitForSeconds(waitTime);
             if (moveX >= moveY && moveX != 0)
             {
                 spriteRenderer.sprite = walk2;
             }
-            yield return new WaitForSeconds(animSpeed);
+            yield return new WaitForSeconds(waitTime);
             if (moveX >= moveY && moveX != 0)
             {
                 spriteRenderer.sprite = walk3;
             }
-            yield return new WaitForSeconds(animSpeed);
+            yield return new WaitForSeconds(waitTime);
             if (moveX >= moveY && moveX != 0)
             {
                 spriteRenderer.sprite = walk4;
             }
-            yield return new WaitForSeconds(animSpeed);
+            yield return new WaitForSeconds(waitTime);
             if (moveX >= moveY && moveX != 0)
             {
                 spriteRenderer.sprite = walk5;
             }
-            yield return new WaitForSeconds(animSpeed);
+            yield return new WaitForSeconds(waitTime);
         }
     }
 }
