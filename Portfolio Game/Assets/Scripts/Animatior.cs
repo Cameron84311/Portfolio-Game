@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Animatior : MonoBehaviour {
+public class Animatior : MonoBehaviour
+{
 
     private SpriteRenderer spriteRenderer;
     private PlayerMovement movement;
@@ -29,9 +30,11 @@ public class Animatior : MonoBehaviour {
         spriteRenderer = GetComponent<SpriteRenderer>();
         movement = GetComponent<PlayerMovement>();
         StartCoroutine(WalkAnim());
+        StartCoroutine(WalkDownAnim());
     }
 
-	void Update () {
+    void Update()
+    {
         moveX = Mathf.Abs(movement.moveX);
         moveY = Mathf.Abs(movement.moveY);
         if (movement.moveX < 0)
@@ -46,73 +49,72 @@ public class Animatior : MonoBehaviour {
         {
             spriteRenderer.sprite = idle;
         }
-        
-        
-        waitTimeX =  (animSpeed * (1/acceleration + 1)/(1/acceleration)) * (1 / (moveX + acceleration));
+
+
+        waitTimeX = (animSpeed * (1 / acceleration + 1) / (1 / acceleration)) * (1 / (moveX + acceleration));
         waitTimeY = (animSpeed * (1 / acceleration + 1) / (1 / acceleration)) * (1 / (moveY + acceleration));
     }
-    
+
     IEnumerator WalkAnim()
     {
         while (true)
         {
             if (moveX >= moveY && moveX != 0)
             {
-                if (moveX >= moveY && moveX != 0)
-                {
-                    spriteRenderer.sprite = walk0;
-                }
-                yield return new WaitForSeconds(waitTimeX);
-                if (moveX >= moveY && moveX != 0)
-                {
-                    spriteRenderer.sprite = walk1;
-                }
-                yield return new WaitForSeconds(waitTimeX);
-                if (moveX >= moveY && moveX != 0)
-                {
-                    spriteRenderer.sprite = walk2;
-                }
-                yield return new WaitForSeconds(waitTimeX);
-                if (moveX >= moveY && moveX != 0)
-                {
-                    spriteRenderer.sprite = walk3;
-                }
-                yield return new WaitForSeconds(waitTimeX);
-                if (moveX >= moveY && moveX != 0)
-                {
-                    spriteRenderer.sprite = walk4;
-                }
-                yield return new WaitForSeconds(waitTimeX);
-                if (moveX >= moveY && moveX != 0)
-                {
-                    spriteRenderer.sprite = walk5;
-                }
-                yield return new WaitForSeconds(waitTimeX);
-            } else if (movement.moveY < moveX && moveY != 0)
-            {
-                if (movement.moveY < moveX && moveY != 0)
-                {
-                    spriteRenderer.sprite = walkDown0;
-                }
-                yield return new WaitForSeconds(waitTimeY);
-                if (movement.moveY < moveX && moveY != 0)
-                {
-                    spriteRenderer.sprite = walkDown1;
-                }
-                yield return new WaitForSeconds(waitTimeY);
-                if (movement.moveY < moveX && moveY != 0)
-                {
-                    spriteRenderer.sprite = walkDown2;
-                }
-                yield return new WaitForSeconds(waitTimeY);
-                if (movement.moveY < moveX && moveY != 0)
-                {
-                    spriteRenderer.sprite = walkDown3;
-                }
-                yield return new WaitForSeconds(waitTimeY);
+                spriteRenderer.sprite = walk0;
             }
-
-
+            yield return new WaitForSeconds(waitTimeX);
+            if (moveX >= moveY && moveX != 0)
+            {
+                spriteRenderer.sprite = walk1;
+            }
+            yield return new WaitForSeconds(waitTimeX);
+            if (moveX >= moveY && moveX != 0)
+            {
+                spriteRenderer.sprite = walk2;
+            }
+            yield return new WaitForSeconds(waitTimeX);
+            if (moveX >= moveY && moveX != 0)
+            {
+                spriteRenderer.sprite = walk3;
+            }
+            yield return new WaitForSeconds(waitTimeX);
+            if (moveX >= moveY && moveX != 0)
+            {
+                spriteRenderer.sprite = walk4;
+            }
+            yield return new WaitForSeconds(waitTimeX);
+            if (moveX >= moveY && moveX != 0)
+            {
+                spriteRenderer.sprite = walk5;
+            }
+            yield return new WaitForSeconds(waitTimeX);
+        }
+    }
+    IEnumerator WalkDownAnim()
+    {
+        while (true)
+        {
+            if (movement.moveY < moveX && moveY != 0)
+            {
+                spriteRenderer.sprite = walkDown0;
+            }
+            yield return new WaitForSeconds(waitTimeY);
+            if (movement.moveY < moveX && moveY != 0)
+            {
+                spriteRenderer.sprite = walkDown1;
+            }
+            yield return new WaitForSeconds(waitTimeY);
+            if (movement.moveY < moveX && moveY != 0)
+            {
+                spriteRenderer.sprite = walkDown2;
+            }
+            yield return new WaitForSeconds(waitTimeY);
+            if (movement.moveY < moveX && moveY != 0)
+            {
+                spriteRenderer.sprite = walkDown3;
+            }
+            yield return new WaitForSeconds(waitTimeY);
         }
     }
 }
