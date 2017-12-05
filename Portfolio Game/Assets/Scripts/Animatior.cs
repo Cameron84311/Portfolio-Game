@@ -44,32 +44,32 @@ public class Animatior : MonoBehaviour {
     {
         while (true)
         {
-            if (moveX > moveY)
+            if (moveX >= moveY && moveX != 0)
             {
                 spriteRenderer.sprite = walk0;
             }
             yield return new WaitForSeconds(animSpeed);
-            if (moveX > moveY)
+            if (moveX >= moveY && moveX != 0)
             {
                 spriteRenderer.sprite = walk1;
             }
             yield return new WaitForSeconds(animSpeed);
-            if (moveX > moveY)
+            if (moveX >= moveY && moveX != 0)
             {
                 spriteRenderer.sprite = walk2;
             }
             yield return new WaitForSeconds(animSpeed);
-            if (moveX > moveY)
+            if (moveX >= moveY && moveX != 0)
             {
                 spriteRenderer.sprite = walk3;
             }
             yield return new WaitForSeconds(animSpeed);
-            if (moveX > moveY)
+            if (moveX >= moveY && moveX != 0)
             {
                 spriteRenderer.sprite = walk4;
             }
             yield return new WaitForSeconds(animSpeed);
-            if (moveX > moveY)
+            if (moveX >= moveY && moveX != 0)
             {
                 spriteRenderer.sprite = walk5;
             }
