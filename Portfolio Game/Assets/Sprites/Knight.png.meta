@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 2410487a23ac3934d9e8d060ee731456
-timeCreated: 1512381956
+timeCreated: 1512480162
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -12,6 +12,11 @@ TextureImporter:
     21300010: Kinght_Side_Walk_3
     21300012: Kinght_Side_Walk_4
     21300014: Kinght_Side_Walk_5
+    21300016: Knight_Down_Idle_0
+    21300018: Knight_Down_Walk_0
+    21300020: Knight_Down_Walk_1
+    21300022: Knight_Down_Walk_2
+    21300024: Knight_Down_Walk_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -70,9 +75,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2
-        y: 38
+        y: 37
         width: 12
-        height: 25
+        height: 26
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -83,9 +88,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 18
-        y: 38
+        y: 37
         width: 12
-        height: 25
+        height: 26
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -99,8 +104,8 @@ TextureImporter:
         y: 49
         width: 12
         height: 14
-      alignment: 9
-      pivot: {x: 0.16, y: 0.5}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -109,9 +114,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 34
-        y: 38
+        y: 37
         width: 12
-        height: 25
+        height: 26
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -122,9 +127,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2
-        y: 6
+        y: 5
         width: 12
-        height: 25
+        height: 26
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -135,9 +140,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 18
-        y: 6
+        y: 5
         width: 12
-        height: 25
+        height: 26
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,9 +153,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 34
-        y: 6
+        y: 5
         width: 12
-        height: 25
+        height: 26
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,9 +166,74 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 50
-        y: 6
+        y: 5
         width: 12
-        height: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight_Down_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 37
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight_Down_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 37
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight_Down_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 5
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight_Down_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 5
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight_Down_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 5
+        width: 13
+        height: 26
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -1,16 +1,16 @@
 ﻿using UnityEngine;
 
 public class UseShield : MonoBehaviour {
-
-	public GameObject sheild;
+ 
+    public GameObject sheild;
 	public float rotationSpeed = 5f;
 	public float joystickDeadzone = 0.2f;
     
     float xAxis;
 	float yAxis;
 
-    void Update () {
-        
+    void Update()
+    {
         if (Input.GetButton("Fire2"))
 		{
             Vector3 dir = Input.mousePosition - Camera.main.WorldToScreenPoint(sheild.transform.position);
