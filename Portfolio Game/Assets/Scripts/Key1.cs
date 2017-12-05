@@ -6,10 +6,12 @@ public class Key : MonoBehaviour {
 	//Makes the dooe a variable
 	public GameObject door;
 
-	void OnCollisionEnter () {
-		//When the key is touched the door will be destoyed
+	void OnCollisionEnter2D () {
+
+        JuiceBox.PopOut(door, 2f, 4);
 		Destroy(door);
-		//Will also destroy the key
+		
+
 		Destroy(gameObject);
 	}
 }
