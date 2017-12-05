@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 2410487a23ac3934d9e8d060ee731456
-timeCreated: 1512480162
+timeCreated: 1512487294
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -17,6 +17,11 @@ TextureImporter:
     21300020: Knight_Down_Walk_1
     21300022: Knight_Down_Walk_2
     21300024: Knight_Down_Walk_3
+    21300026: Knight_Up_Idle_0
+    21300028: Knight_Up_Walk_0
+    21300030: Knight_Up_Walk_1
+    21300032: Knight_Up_Walk_2
+    21300034: Knight_Up_Walk_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -75,7 +80,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2
-        y: 37
+        y: 69
         width: 12
         height: 26
       alignment: 0
@@ -88,7 +93,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 18
-        y: 37
+        y: 69
         width: 12
         height: 26
       alignment: 0
@@ -100,8 +105,8 @@ TextureImporter:
       name: Sheild_0
       rect:
         serializedVersion: 2
-        x: 51
-        y: 49
+        x: 82
+        y: 17
         width: 12
         height: 14
       alignment: 4
@@ -114,7 +119,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 34
-        y: 37
+        y: 69
         width: 12
         height: 26
       alignment: 0
@@ -126,8 +131,8 @@ TextureImporter:
       name: Kinght_Side_Walk_2
       rect:
         serializedVersion: 2
-        x: 2
-        y: 5
+        x: 50
+        y: 69
         width: 12
         height: 26
       alignment: 0
@@ -139,8 +144,8 @@ TextureImporter:
       name: Kinght_Side_Walk_3
       rect:
         serializedVersion: 2
-        x: 18
-        y: 5
+        x: 66
+        y: 69
         width: 12
         height: 26
       alignment: 0
@@ -152,8 +157,8 @@ TextureImporter:
       name: Kinght_Side_Walk_4
       rect:
         serializedVersion: 2
-        x: 34
-        y: 5
+        x: 82
+        y: 69
         width: 12
         height: 26
       alignment: 0
@@ -165,8 +170,8 @@ TextureImporter:
       name: Kinght_Side_Walk_5
       rect:
         serializedVersion: 2
-        x: 50
-        y: 5
+        x: 82
+        y: 37
         width: 12
         height: 26
       alignment: 0
@@ -178,8 +183,8 @@ TextureImporter:
       name: Knight_Down_Idle_0
       rect:
         serializedVersion: 2
-        x: 65
-        y: 37
+        x: 1
+        y: 5
         width: 13
         height: 26
       alignment: 0
@@ -191,8 +196,8 @@ TextureImporter:
       name: Knight_Down_Walk_0
       rect:
         serializedVersion: 2
-        x: 81
-        y: 37
+        x: 17
+        y: 5
         width: 13
         height: 26
       alignment: 0
@@ -204,7 +209,7 @@ TextureImporter:
       name: Knight_Down_Walk_1
       rect:
         serializedVersion: 2
-        x: 65
+        x: 33
         y: 5
         width: 13
         height: 26
@@ -217,7 +222,7 @@ TextureImporter:
       name: Knight_Down_Walk_2
       rect:
         serializedVersion: 2
-        x: 81
+        x: 49
         y: 5
         width: 13
         height: 26
@@ -230,8 +235,73 @@ TextureImporter:
       name: Knight_Down_Walk_3
       rect:
         serializedVersion: 2
-        x: 97
+        x: 65
         y: 5
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight_Up_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 37
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight_Up_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 37
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight_Up_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 37
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight_Up_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 37
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knight_Up_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 37
         width: 13
         height: 26
       alignment: 0
