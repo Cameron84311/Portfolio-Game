@@ -100,20 +100,20 @@ PolygonCollider2D:
   m_GameObject: {fileID: 1000014003223554}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: dec31246595fe574c850820d3da4a01b, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   m_Points:
     m_Paths:
-    - - {x: 0.31338078, y: 0.4375}
-      - {x: 0.31612638, y: -0.43560442}
-      - {x: 0.44009915, y: -0.43578425}
-      - {x: 0.5648541, y: -0.31191972}
-      - {x: 0.6276648, y: -0.12345719}
-      - {x: 0.62698925, y: 0.12472266}
-      - {x: 0.5595582, y: 0.30979288}
-      - {x: 0.43590298, y: 0.43648827}
+    - - {x: 0.6843152, y: 0.31016994}
+      - {x: 0.5618273, y: 0.4329536}
+      - {x: 0.434947, y: 0.43258882}
+      - {x: 0.43813223, y: -0.43618062}
+      - {x: 0.5611697, y: -0.438143}
+      - {x: 0.68785906, y: -0.31182063}
+      - {x: 0.75, y: -0.12764966}
+      - {x: 0.75, y: 0.12227708}
 --- !u!114 &114000012094149104
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -161,10 +161,16 @@ MonoBehaviour:
   walk3: {fileID: 21300010, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
   walk4: {fileID: 21300012, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
   walk5: {fileID: 21300014, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  downIdle: {fileID: 21300016, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  walkDown0: {fileID: 21300018, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  walkDown1: {fileID: 21300020, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  walkDown2: {fileID: 21300022, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  walkDown3: {fileID: 21300024, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
   animSpeed: 0.08
   moveX: 0
   moveY: 0
-  waitTime: 0
+  waitTimeX: 0
+  waitTimeY: 0
   acceleration: 0.4
 --- !u!212 &212000010356862234
 SpriteRenderer:
