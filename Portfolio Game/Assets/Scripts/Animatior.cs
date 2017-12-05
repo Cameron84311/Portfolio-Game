@@ -95,22 +95,22 @@ public class Animatior : MonoBehaviour
     {
         while (true)
         {
-            if (movement.moveY < moveX && moveY != 0)
+            if (moveY > moveX)
             {
                 spriteRenderer.sprite = walkDown0;
             }
             yield return new WaitForSeconds(waitTimeY);
-            if (movement.moveY < moveX && moveY != 0)
+            if (moveY > moveX)
             {
                 spriteRenderer.sprite = walkDown1;
             }
             yield return new WaitForSeconds(waitTimeY);
-            if (movement.moveY < moveX && moveY != 0)
+            if (moveY > moveX)
             {
                 spriteRenderer.sprite = walkDown2;
             }
             yield return new WaitForSeconds(waitTimeY);
-            if (movement.moveY < moveX && moveY != 0)
+            if (moveY > moveX)
             {
                 spriteRenderer.sprite = walkDown3;
             }
