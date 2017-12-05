@@ -166,6 +166,11 @@ MonoBehaviour:
   walkDown1: {fileID: 21300020, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
   walkDown2: {fileID: 21300022, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
   walkDown3: {fileID: 21300024, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  upIdle: {fileID: 21300026, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  walkUp0: {fileID: 21300028, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  walkUp1: {fileID: 21300030, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  walkUp2: {fileID: 21300032, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  walkUp3: {fileID: 21300034, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
   animSpeed: 0.08
   moveX: 0
   moveY: 0
