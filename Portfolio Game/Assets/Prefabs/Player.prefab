@@ -24,6 +24,7 @@ GameObject:
   - 114: {fileID: 114000013413036154}
   - 114: {fileID: 114000012094149104}
   - 114: {fileID: 114000013588287234}
+  - 60: {fileID: 60000011056034126}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -55,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014003223554}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.15, z: 0}
+  m_LocalPosition: {x: 0, y: -0.125, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -92,6 +93,32 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!60 &60000011056034126
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011065961892}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: -0.036144495, y: 0.6244612}
+      - {x: -0.24618214, y: 0.5664772}
+      - {x: -0.31362504, y: 0.4354188}
+      - {x: -0.30764276, y: 0.19005546}
+      - {x: -0.22057837, y: 0.059045225}
+      - {x: -0.17936963, y: -0.43727368}
+      - {x: 0.23068196, y: -0.44048065}
+      - {x: 0.2951647, y: -0.08270463}
+      - {x: 0.23038447, y: -0.042129844}
+      - {x: 0.31908, y: 0.13545164}
+      - {x: 0.31630027, y: 0.3727784}
+      - {x: 0.19581133, y: 0.55565834}
 --- !u!60 &60000012794449192
 PolygonCollider2D:
   m_ObjectHideFlags: 1
