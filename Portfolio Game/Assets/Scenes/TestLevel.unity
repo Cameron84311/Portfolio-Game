@@ -174,12 +174,12 @@ Prefab:
     - target: {fileID: 114000013413036154, guid: 03ec94c5a7c09d64b8f541dd7bab1e33,
         type: 2}
       propertyPath: animSpeed
-      value: 0.04
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 114000013413036154, guid: 03ec94c5a7c09d64b8f541dd7bab1e33,
         type: 2}
       propertyPath: speed
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114000013413036154, guid: 03ec94c5a7c09d64b8f541dd7bab1e33,
         type: 2}
