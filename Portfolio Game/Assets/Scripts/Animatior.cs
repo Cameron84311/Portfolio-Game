@@ -58,7 +58,6 @@ public class Animatior : MonoBehaviour
                 spriteRenderer.sprite = idle;
             }
         }
-        else { spriteRenderer.flipX = false; }
 
         waitTimeX = (animSpeed * (1 / acceleration + 1) / (1 / acceleration)) * (1 / (moveX + acceleration));
         waitTimeY = (animSpeed * (1 / acceleration + 1) / (1 / acceleration)) * (1 / (moveY + acceleration));
