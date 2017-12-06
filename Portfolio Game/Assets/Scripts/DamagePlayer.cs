@@ -2,6 +2,7 @@
 
 public class DamagePlayer : MonoBehaviour {
 
+    public GameObject Shield;
     public GameObject healthGUI;
     private PlayerHealth playerHealth;
 
@@ -13,7 +14,7 @@ public class DamagePlayer : MonoBehaviour {
     // If the gameObject collides with the player then do dammage
     void OnCollisionEnter2D(Collision2D coll)
     {
-        if (coll.gameObject.tag == "Player")
+        if (coll.gameObject.tag == "Player" &! Shield.activeSelf)
         {
             playerHealth.DamagePlayer();
         }

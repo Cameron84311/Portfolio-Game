@@ -2159,6 +2159,11 @@ Transform:
   - {fileID: 1852992804}
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!1 &708149237 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000014003223554, guid: 03ec94c5a7c09d64b8f541dd7bab1e33,
+    type: 2}
+  m_PrefabInternal: {fileID: 913303116}
 --- !u!1 &743851540
 GameObject:
   m_ObjectHideFlags: 0
@@ -5700,6 +5705,11 @@ Prefab:
       propertyPath: healthGUI
       value: 
       objectReference: {fileID: 1366250417}
+    - target: {fileID: 114000011100472824, guid: 49b7d9b1440f0bc47b8d9b6ba1e35f49,
+        type: 2}
+      propertyPath: Shield
+      value: 
+      objectReference: {fileID: 708149237}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 49b7d9b1440f0bc47b8d9b6ba1e35f49, type: 2}
   m_IsPrefabParent: 0
