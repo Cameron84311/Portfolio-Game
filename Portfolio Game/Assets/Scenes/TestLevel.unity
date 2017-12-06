@@ -1222,29 +1222,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 679784265}
   m_RootOrder: 22
---- !u!1 &495192324 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1000011065961892, guid: 03ec94c5a7c09d64b8f541dd7bab1e33,
-    type: 2}
-  m_PrefabInternal: {fileID: 913303116}
---- !u!60 &495192330
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 495192324}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  m_Points:
-    m_Paths:
-    - - {x: -0.375, y: 0.8125}
-      - {x: -0.375, y: -0.8125}
-      - {x: 0.375, y: -0.8125}
-      - {x: 0.375, y: 0.8125}
 --- !u!1 &497968238
 GameObject:
   m_ObjectHideFlags: 0
@@ -2449,11 +2426,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 679784265}
   m_RootOrder: 25
---- !u!1 &789988083 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1000013100583414, guid: 03ec94c5a7c09d64b8f541dd7bab1e33,
-    type: 2}
-  m_PrefabInternal: {fileID: 913303116}
 --- !u!1 &796519511
 GameObject:
   m_ObjectHideFlags: 0
@@ -2618,9 +2590,11 @@ GameObject:
   - 4: {fileID: 875156706}
   - 212: {fileID: 875156705}
   - 114: {fileID: 875156707}
+  - 61: {fileID: 875156708}
+  - 114: {fileID: 875156709}
   m_Layer: 0
   m_Name: beta goblin
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2684,6 +2658,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   range: 5
+--- !u!61 &875156708
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 875156704}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -0.028618336, y: 0.12878275}
+  serializedVersion: 2
+  m_Size: {x: 0.79803085, y: 1.2273054}
+--- !u!114 &875156709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 875156704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1826b9e72ffa440419e6167b5a837035, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthGUI: {fileID: 1124713369}
 --- !u!1 &905576543
 GameObject:
   m_ObjectHideFlags: 0
@@ -2832,7 +2832,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000014214833584, guid: 03ec94c5a7c09d64b8f541dd7bab1e33, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.57
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000014214833584, guid: 03ec94c5a7c09d64b8f541dd7bab1e33, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2873,7 +2873,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010169752720, guid: 03ec94c5a7c09d64b8f541dd7bab1e33, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -8.19
+      value: -6.78
       objectReference: {fileID: 0}
     - target: {fileID: 4000010169752720, guid: 03ec94c5a7c09d64b8f541dd7bab1e33, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2894,7 +2894,16 @@ Prefab:
       propertyPath: wobblePower
       value: 0.1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 4000011741496080, guid: 03ec94c5a7c09d64b8f541dd7bab1e33, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011741496080, guid: 03ec94c5a7c09d64b8f541dd7bab1e33, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114000010648514114, guid: 03ec94c5a7c09d64b8f541dd7bab1e33, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 03ec94c5a7c09d64b8f541dd7bab1e33, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1003224662
@@ -3256,6 +3265,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 679784265}
   m_RootOrder: 9
+--- !u!1 &1124713369 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000010574048368, guid: 03ec94c5a7c09d64b8f541dd7bab1e33,
+    type: 2}
+  m_PrefabInternal: {fileID: 913303116}
 --- !u!1 &1138602077
 GameObject:
   m_ObjectHideFlags: 0
@@ -6651,7 +6665,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   door: {fileID: 2135061974}
   door2: {fileID: 1617845275}
-  View: {fileID: 789988083}
+  View: {fileID: 0}
 --- !u!60 &2071433511
 PolygonCollider2D:
   m_ObjectHideFlags: 0
