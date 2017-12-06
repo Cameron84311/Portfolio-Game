@@ -18,7 +18,8 @@ public class HealthItem : MonoBehaviour {
             if (playerHealth.health < 3)
             {
                 playerHealth.HealPlayer();
-                Destroy(gameObject);
+                JuiceBox.PopOut(gameObject);
+                Destroy(gameObject, 03f);
             }
         }
     }
