@@ -4,14 +4,15 @@ public class PlayerHealth : MonoBehaviour
 {
 
     private SpriteRenderer spriteRenderer;
+    public GameObject mainCamera;
     public Sprite health0;
     public Sprite health1;
     public Sprite health2;
     public Sprite health3;
     public int health = 3;
-    public float wobblePower = 0.05f;
-    public float wobbleTime = 0.2f;
-
+    public float rattlePower = 1f;
+    public float rattleTime = 0.2f;
+ 
     // Fetches the SpriteRenderer componenet and updates the players Health.
     void Start()
     {    
@@ -22,6 +23,7 @@ public class PlayerHealth : MonoBehaviour
     // Removes one health and wobbles the GUI then it  
     public void DamagePlayer()
     {
+        JuiceBox.Rattle(mainCamera, rattlePower, rattleTime);
         health--;
         UpdateHealth();    
     }

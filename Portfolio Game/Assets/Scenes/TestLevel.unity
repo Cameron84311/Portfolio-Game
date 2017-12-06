@@ -753,6 +753,11 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 4, y: 1}
+--- !u!1 &287294643 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000013100583414, guid: 03ec94c5a7c09d64b8f541dd7bab1e33,
+    type: 2}
+  m_PrefabInternal: {fileID: 913303116}
 --- !u!1 &292868781
 GameObject:
   m_ObjectHideFlags: 0
@@ -2888,6 +2893,21 @@ Prefab:
     - target: {fileID: 1000014003223554, guid: 03ec94c5a7c09d64b8f541dd7bab1e33, type: 2}
       propertyPath: m_TagString
       value: Sheild
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013943288452, guid: 03ec94c5a7c09d64b8f541dd7bab1e33,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 287294643}
+    - target: {fileID: 114000013943288452, guid: 03ec94c5a7c09d64b8f541dd7bab1e33,
+        type: 2}
+      propertyPath: cameraPower
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013943288452, guid: 03ec94c5a7c09d64b8f541dd7bab1e33,
+        type: 2}
+      propertyPath: wobblePower
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03ec94c5a7c09d64b8f541dd7bab1e33, type: 2}
