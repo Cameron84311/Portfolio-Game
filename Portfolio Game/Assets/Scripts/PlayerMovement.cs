@@ -1,18 +1,23 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class PlayerMovement : MonoBehaviour {
 
     public float speed = 2;
-    public float acceleration = 1;
 	public float moveX;
 	public float moveY;
 
     void Update(){
-        
+        // Creates new Vector3 called moveDir with values of 0.
         Vector3 moveDir = Vector3.zero;
-        moveDir.x = Input.GetAxis("Horizontal"); moveX = moveDir.x;
-        moveDir.y = Input.GetAxis("Vertical"); moveY = moveDir.y;
+        // Applies the Horizontal input axis to the x axis of moveDir.
+        moveDir.x = Input.GetAxis("Horizontal");
+        // Applies the Vertical input axis to the y axis of moveDir.
+        moveDir.y = Input.GetAxis("Vertical"); 
+        // Applies moveDir to the players transform.
         transform.position += moveDir * speed * Time.deltaTime;
-	}
+        
+        //Apllies x and y values to corresponding floats for other scripts to use.
+        moveX = moveDir.x;
+        moveY = moveDir.y;
+    }
 }
