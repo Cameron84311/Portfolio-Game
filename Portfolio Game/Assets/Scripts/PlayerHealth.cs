@@ -36,4 +36,10 @@ public class PlayerHealth : MonoBehaviour
         if (health == 1) { spriteRenderer.sprite = health1; }
         if (health == 0) { spriteRenderer.sprite = health0; }
     }
+
+    public void HealPlayer()
+    {
+        health++;
+        UpdateHealth();
+    }
 }
