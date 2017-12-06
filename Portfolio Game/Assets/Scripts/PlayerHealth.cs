@@ -9,23 +9,34 @@ public class PlayerHealth : MonoBehaviour
     public Sprite health2;
     public Sprite health3;
     public int health = 3;
+    public float wobblePower = 0.05f;
+    public float wobbleTime = 0.2f;
 
+    //temp --==\/==--
     void OnMouseDown()
     {
-        //temp
-        JuiceBox.Wobble(gameObject, 0.05f, 0.2f);
         DamagePlayer();
     }
+    //temp --==/\==--
 
+    // Gets the SpriteRenderer componenet and updates the players Health.
     void Start()
-    {
-        health = 3;
+    {    
         spriteRenderer = GetComponent<SpriteRenderer>();
+        UpdateHealth();
     }
-
+    
+    // Removes one health and wobbles the GUI then it  
     void DamagePlayer()
     {
+        JuiceBox.Wobble(gameObject, wobblePower, wobbleTime);
         health--;
+        UpdateHealth();    
+    }
+   
+    // Updates the GUI to the current health.
+    void UpdateHealth()
+    {
         if (health == 3) { spriteRenderer.sprite = health3; }
         if (health == 2) { spriteRenderer.sprite = health2; }
         if (health == 1) { spriteRenderer.sprite = health1; }
