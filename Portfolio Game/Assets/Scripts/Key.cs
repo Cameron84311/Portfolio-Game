@@ -10,11 +10,11 @@ public class Key : MonoBehaviour {
 
     void OnCollisionEnter2D() {
 
-        JuiceBox.Rattle(door);
+		JuiceBox.Rattle(door);
         Destroy(door, 0.6f);
         JuiceBox.Rattle(door2);
         Destroy(door2, 0.6f);
-        JuiceBox.Wobble(View, 50);
+        JuiceBox.Wobble(View, 5);
         Destroy(gameObject);
 
     }
