@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Animatior : MonoBehaviour
+public class PlayerAnimations : MonoBehaviour
 {
 
     private SpriteRenderer spriteRenderer;

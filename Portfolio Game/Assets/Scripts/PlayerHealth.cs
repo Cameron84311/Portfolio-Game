@@ -19,7 +19,7 @@ public class PlayerHealth : MonoBehaviour
     }
     //temp --==/\==--
 
-    // Gets the SpriteRenderer componenet and updates the players Health.
+    // Fetches the SpriteRenderer componenet and updates the players Health.
     void Start()
     {    
         spriteRenderer = GetComponent<SpriteRenderer>();

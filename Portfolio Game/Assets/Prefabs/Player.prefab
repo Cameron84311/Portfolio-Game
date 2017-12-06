@@ -23,8 +23,8 @@ GameObject:
   - 50: {fileID: 50000010076430926}
   - 114: {fileID: 114000013413036154}
   - 114: {fileID: 114000012094149104}
-  - 114: {fileID: 114000013588287234}
   - 60: {fileID: 60000011056034126}
+  - 114: {fileID: 114000010720749498}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -48,7 +48,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4000011176072472
 Transform:
   m_ObjectHideFlags: 1
@@ -133,14 +133,48 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Points:
     m_Paths:
-    - - {x: 0.6843152, y: 0.31016994}
-      - {x: 0.5618273, y: 0.4329536}
-      - {x: 0.434947, y: 0.43258882}
-      - {x: 0.43813223, y: -0.43618062}
-      - {x: 0.5611697, y: -0.438143}
-      - {x: 0.68785906, y: -0.31182063}
-      - {x: 0.75, y: -0.12764966}
-      - {x: 0.75, y: 0.12227708}
+    - - {x: 0.7529579, y: 0.31589004}
+      - {x: 0.63047016, y: 0.44439402}
+      - {x: 0.5150302, y: 0.44402924}
+      - {x: 0.5067749, y: -0.4361806}
+      - {x: 0.6298125, y: -0.43814301}
+      - {x: 0.7565019, y: -0.31182063}
+      - {x: 0.8186429, y: -0.1276496}
+      - {x: 0.8186426, y: 0.12227708}
+--- !u!114 &114000010720749498
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011065961892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc2307c253fb3584399fe1db750b705d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idle: {fileID: 21300000, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  walk0: {fileID: 21300002, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  walk1: {fileID: 21300006, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  walk2: {fileID: 21300008, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  walk3: {fileID: 21300010, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  walk4: {fileID: 21300012, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  walk5: {fileID: 21300014, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  downIdle: {fileID: 21300016, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  walkDown0: {fileID: 21300018, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  walkDown1: {fileID: 21300020, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  walkDown2: {fileID: 21300022, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  walkDown3: {fileID: 21300024, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  upIdle: {fileID: 21300026, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  walkUp0: {fileID: 21300028, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  walkUp1: {fileID: 21300030, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  walkUp2: {fileID: 21300032, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  walkUp3: {fileID: 21300034, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
+  animSpeed: 0.08
+  moveX: 0
+  moveY: 0
+  waitTimeX: 0
+  waitTimeY: 0
+  acceleration: 0.5
 --- !u!114 &114000012094149104
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -167,43 +201,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2.5
-  acceleration: 1
   moveX: 0
   moveY: 0
---- !u!114 &114000013588287234
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011065961892}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11efece0b9bc9ca4e80ec303f430d724, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  idle: {fileID: 21300000, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
-  walk0: {fileID: 21300002, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
-  walk1: {fileID: 21300006, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
-  walk2: {fileID: 21300008, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
-  walk3: {fileID: 21300010, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
-  walk4: {fileID: 21300012, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
-  walk5: {fileID: 21300014, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
-  downIdle: {fileID: 21300016, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
-  walkDown0: {fileID: 21300018, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
-  walkDown1: {fileID: 21300020, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
-  walkDown2: {fileID: 21300022, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
-  walkDown3: {fileID: 21300024, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
-  upIdle: {fileID: 21300026, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
-  walkUp0: {fileID: 21300028, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
-  walkUp1: {fileID: 21300030, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
-  walkUp2: {fileID: 21300032, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
-  walkUp3: {fileID: 21300034, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
-  animSpeed: 0.08
-  moveX: 0
-  moveY: 0
-  waitTimeX: 0
-  waitTimeY: 0
-  acceleration: 0.4
 --- !u!212 &212000010356862234
 SpriteRenderer:
   m_ObjectHideFlags: 1
