@@ -15,8 +15,11 @@ public class HealthItem : MonoBehaviour {
     {
         if (coll.gameObject.tag == "Player")
         {
-            playerHealth.HealPlayer();
-            Destroy(gameObject);
+            if (playerHealth.health < 3)
+            {
+                playerHealth.HealPlayer();
+                Destroy(gameObject);
+            }
         }
     }
 }
