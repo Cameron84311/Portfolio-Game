@@ -14,7 +14,7 @@ public class Key : MonoBehaviour {
         Destroy(door, 0.6f);
         JuiceBox.Rattle(door2);
         Destroy(door2, 0.6f);
-        JuiceBox.Wobble(View, 5);
+        JuiceBox.Wobble(View, 0.5f);
         Destroy(gameObject);
 
     }
