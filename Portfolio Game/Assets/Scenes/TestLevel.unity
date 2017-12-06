@@ -2159,6 +2159,11 @@ Transform:
   - {fileID: 1852992804}
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!1 &708149237 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000014003223554, guid: 03ec94c5a7c09d64b8f541dd7bab1e33,
+    type: 2}
+  m_PrefabInternal: {fileID: 913303116}
 --- !u!1 &743851540
 GameObject:
   m_ObjectHideFlags: 0
@@ -2759,6 +2764,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 20000011191196798, guid: 03ec94c5a7c09d64b8f541dd7bab1e33,
         type: 2}
       propertyPath: m_BackGroundColor.r
@@ -2781,6 +2787,16 @@ Prefab:
     - target: {fileID: 4000010169752720, guid: 03ec94c5a7c09d64b8f541dd7bab1e33, type: 2}
       propertyPath: m_LocalPosition.y
       value: 4.24
+=======
+    - target: {fileID: 4000010169752720, guid: 03ec94c5a7c09d64b8f541dd7bab1e33, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 212000010636527028, guid: 03ec94c5a7c09d64b8f541dd7bab1e33,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 10
+>>>>>>> faf8383f99c2ce6cd7ba6e3a026d7c3ef8e2df6d
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03ec94c5a7c09d64b8f541dd7bab1e33, type: 2}
@@ -5723,6 +5739,11 @@ Prefab:
       propertyPath: healthGUI
       value: 
       objectReference: {fileID: 1366250417}
+    - target: {fileID: 114000011100472824, guid: 49b7d9b1440f0bc47b8d9b6ba1e35f49,
+        type: 2}
+      propertyPath: Shield
+      value: 
+      objectReference: {fileID: 708149237}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 49b7d9b1440f0bc47b8d9b6ba1e35f49, type: 2}
   m_IsPrefabParent: 0
