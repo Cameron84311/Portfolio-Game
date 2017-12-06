@@ -1253,7 +1253,7 @@ GameObject:
   - 114: {fileID: 882608376}
   - 114: {fileID: 882608375}
   m_Layer: 5
-  m_Name: Dropdown
+  m_Name: ResolutionDropdown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1328,11 +1328,22 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: 1024 x 800
       m_Image: {fileID: 0}
-    - m_Text: Option C
+    - m_Text: 1920 x 1080
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1807534645}
+        m_MethodName: SetResolution
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Dropdown+DropdownEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &882608376
@@ -2533,6 +2544,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: 8458f0e787193154b98589a44fa8cacb, type: 2}
+  resolutionDropdown: {fileID: 882608375}
 --- !u!1 &1825203660
 GameObject:
   m_ObjectHideFlags: 0
