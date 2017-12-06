@@ -32,8 +32,11 @@ public class Animatior : MonoBehaviour
 
     void Start()
     {
+        // Fetches the SpriteRenderer component.
         spriteRenderer = GetComponent<SpriteRenderer>();
+        // Fetches the PlayerMovement script.
         movement = GetComponent<PlayerMovement>();
+        // Starts Coroutines, allowing time delays in the code.
         StartCoroutine(WalkAnim());
         StartCoroutine(WalkDownAnim());
         StartCoroutine(WalkUpAnim());
@@ -41,28 +44,34 @@ public class Animatior : MonoBehaviour
 
     void Update()
     {
+        // Creates only positive values for the speed of the gameObject.
         moveX = Mathf.Abs(movement.moveX);
         moveY = Mathf.Abs(movement.moveY);
+        // If the gameObject is moving more horizontaly than verticaly or is going diaganoly.
         if (moveX >= moveY)
         {
+            // If the gameObject is moving to the Left then flip the sprite horizontaly.
             if (movement.moveX < 0)
             {
                 spriteRenderer.flipX = true;
             }
+            // If the gameObject is moving to the Right then flip the sprite horizontaly.
             else if (movement.moveX > 0)
             {
                 spriteRenderer.flipX = false;
             }
+            // If the gameObject is not moving then apply the idle sprite.
             if (moveX == 0 && moveY == 0)
             {
                 spriteRenderer.sprite = idle;
             }
         }
-
+        // Changes the wait time so that it is proportional to the speed of the player meaning that the animation playes 
         waitTimeX = (animSpeed * (1 / acceleration + 1) / (1 / acceleration)) * (1 / (moveX + acceleration));
         waitTimeY = (animSpeed * (1 / acceleration + 1) / (1 / acceleration)) * (1 / (moveY + acceleration));
     }
 
+    // Cycles through the horizontal walk animations if the player is moving more horizontaly than verticaly or is going diaganoly.
     IEnumerator WalkAnim()
     {
         while (true)
@@ -99,6 +108,7 @@ public class Animatior : MonoBehaviour
             yield return new WaitForSeconds(waitTimeX);
         }
     }
+    // Cycles through the downwards walk animations if the player is moving more downwards than horizontaly.
     IEnumerator WalkDownAnim()
     {
         while (true)
@@ -125,6 +135,7 @@ public class Animatior : MonoBehaviour
             yield return new WaitForSeconds(waitTimeY);
         }
     }
+    // Cycles through the upwards walk animations if the player is moving more upwards than horizontaly
     IEnumerator WalkUpAnim()
     {
         while (true)
