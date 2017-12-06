@@ -12,6 +12,8 @@ public class PlayerHealth : MonoBehaviour
 
     void OnMouseDown()
     {
+        //temp
+        JuiceBox.Wobble(gameObject, 0.05f, 0.2f);
         DamagePlayer();
     }
 
