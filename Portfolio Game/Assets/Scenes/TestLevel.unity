@@ -1217,29 +1217,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 679784265}
   m_RootOrder: 22
---- !u!1 &495192324 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1000011065961892, guid: 03ec94c5a7c09d64b8f541dd7bab1e33,
-    type: 2}
-  m_PrefabInternal: {fileID: 913303116}
---- !u!60 &495192330
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 495192324}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  m_Points:
-    m_Paths:
-    - - {x: -0.375, y: 0.8125}
-      - {x: -0.375, y: -0.8125}
-      - {x: 0.375, y: -0.8125}
-      - {x: 0.375, y: 0.8125}
 --- !u!1 &497968238
 GameObject:
   m_ObjectHideFlags: 0
@@ -2857,23 +2834,6 @@ Prefab:
     - target: {fileID: 4000014214833584, guid: 03ec94c5a7c09d64b8f541dd7bab1e33, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011741496080, guid: 03ec94c5a7c09d64b8f541dd7bab1e33, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 212000010636527028, guid: 03ec94c5a7c09d64b8f541dd7bab1e33,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010169752720, guid: 03ec94c5a7c09d64b8f541dd7bab1e33, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -8.19
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010169752720, guid: 03ec94c5a7c09d64b8f541dd7bab1e33, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 4.24
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03ec94c5a7c09d64b8f541dd7bab1e33, type: 2}
