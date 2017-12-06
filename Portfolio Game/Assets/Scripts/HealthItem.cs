@@ -16,7 +16,8 @@ public class HealthItem : MonoBehaviour {
         if (coll.gameObject.tag == "Player")
         {
             playerHealth.HealPlayer();
-            Destroy(gameObject);
+            JuiceBox.PopOut(gameObject);
+            Destroy(gameObject, 0.3f);
         }
     }
 }
