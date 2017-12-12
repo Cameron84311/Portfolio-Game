@@ -19,7 +19,7 @@ public class HealthItem : MonoBehaviour {
             {
                 playerHealth.HealPlayer();
                 JuiceBox.PopOut(gameObject);
-                Destroy(gameObject, 03f);
+                Destroy(gameObject, 3f);
             }
         }
     }
