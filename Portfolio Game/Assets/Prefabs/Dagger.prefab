@@ -20,9 +20,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000012370559732}
   - 212: {fileID: 212000012069832248}
-  - 60: {fileID: 60000011382141118}
   - 50: {fileID: 50000012459113952}
   - 114: {fileID: 114000011035049942}
+  - 58: {fileID: 58000014268919716}
   m_Layer: 9
   m_Name: Dagger
   m_TagString: Untagged
@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011891778228}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.71, y: -0.049191594, z: 0}
+  m_LocalPosition: {x: -12.58536, y: -5.691677, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -60,8 +60,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!60 &60000011382141118
-PolygonCollider2D:
+--- !u!58 &58000014268919716
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -71,24 +71,9 @@ PolygonCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  m_Points:
-    m_Paths:
-    - - {x: -0.12816525, y: 0.04871522}
-      - {x: -0.2614119, y: 0.05684714}
-      - {x: -0.24794006, y: -0.047460914}
-      - {x: -0.17841458, y: -0.05302739}
-      - {x: -0.34571183, y: -0.19736369}
-      - {x: -0.34198236, y: -0.26412785}
-      - {x: -0.2736355, y: -0.31771863}
-      - {x: -0.1952672, y: -0.30926013}
-      - {x: -0.061409473, y: -0.15665843}
-      - {x: -0.056357145, y: -0.25584882}
-      - {x: 0.0757041, y: -0.24998873}
-      - {x: 0.06959152, y: -0.07825352}
-      - {x: 0.30196905, y: 0.10530037}
-      - {x: 0.30308747, y: 0.2995923}
-      - {x: 0.14025092, y: 0.31633914}
+  m_Offset: {x: -0.0626, y: -0.0626}
+  serializedVersion: 2
+  m_Radius: 0.18817711
 --- !u!114 &114000011035049942
 MonoBehaviour:
   m_ObjectHideFlags: 1
