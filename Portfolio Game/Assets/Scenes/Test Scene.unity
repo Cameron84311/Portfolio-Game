@@ -131,9 +131,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114000011309913716, guid: ad5d879deaa16cb4b8f4de0272f50430,
         type: 2}
-      propertyPath: healthGUI
-      value: 
-      objectReference: {fileID: 840765304}
+      propertyPath: healAmount
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad5d879deaa16cb4b8f4de0272f50430, type: 2}
   m_IsPrefabParent: 0
@@ -289,6 +289,11 @@ Prefab:
     - target: {fileID: 4000011227749286, guid: 49b7d9b1440f0bc47b8d9b6ba1e35f49, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011100472824, guid: 49b7d9b1440f0bc47b8d9b6ba1e35f49,
+        type: 2}
+      propertyPath: damageAmount
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 49b7d9b1440f0bc47b8d9b6ba1e35f49, type: 2}

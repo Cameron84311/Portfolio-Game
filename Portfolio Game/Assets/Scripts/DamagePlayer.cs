@@ -2,6 +2,8 @@
 
 public class DamagePlayer : MonoBehaviour {
 
+    public int damageAmount = 1;
+
     // Checks for a collision and applies the collided gameObject to coll.
     void OnCollisionEnter2D(Collision2D coll)
     {
@@ -12,7 +14,7 @@ public class DamagePlayer : MonoBehaviour {
             if (!coll.gameObject.transform.Find("Shield").gameObject.activeSelf)
             {
                 // Calls the DamagePlayer()  method on the collided player.
-                coll.gameObject.GetComponent<PlayerHealth>().DamagePlayer();
+                coll.gameObject.GetComponent<PlayerHealth>().DamagePlayer(damageAmount);
             }
         }
     }

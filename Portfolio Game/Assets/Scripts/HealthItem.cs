@@ -1,23 +1,16 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class HealthItem : MonoBehaviour {
 
-    public GameObject healthGUI;
-    private PlayerHealth playerHealth;
-
-    void Start ()
-    {
-        playerHealth = healthGUI.GetComponent<PlayerHealth>();
-    }
+    public int healAmount = 1;
 
     void OnCollisionEnter2D(Collision2D coll)
     {
         if (coll.gameObject.tag == "Player")
         {
-            if (playerHealth.health < 3)
+            if (coll.gameObject.GetComponent<PlayerHealth>().health < 3)
             {
-                playerHealth.HealPlayer();
+                coll.gameObject.GetComponent<PlayerHealth>().HealPlayer(healAmount);
                 JuiceBox.PopOut(gameObject);
                 Destroy(gameObject, 3f);
             }

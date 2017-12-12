@@ -22,12 +22,12 @@ public class PlayerHealth : MonoBehaviour
     }
     
     // Removes one health and wobbles the GUI then it  
-    public void DamagePlayer()
+    public void DamagePlayer(int damageAmount)
     {
         if (health > 0)
         {
             JuiceBox.Rattle(Camera.main.gameObject, rattlePower, rattleTime);
-            health--;
+            health = health - damageAmount;
             UpdateHealth();
         }  
     }
@@ -41,11 +41,11 @@ public class PlayerHealth : MonoBehaviour
         if (health == 0) { spriteRenderer.sprite = health0; }
     }
 
-    public void HealPlayer()
+    public void HealPlayer(int healAmount)
     {
         if (health < 3)
         {
-            health++;
+            health = health + healAmount;
             UpdateHealth();
         }
     }
