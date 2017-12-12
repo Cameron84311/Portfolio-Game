@@ -44,13 +44,21 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+<<<<<<< HEAD
   spritePixelsToUnits: 16
+=======
+  spritePixelsToUnits: 32
+>>>>>>> b26792405c7ce2bb2f07dc44069a50d43207ac1c
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   buildTargetSettings:
   - buildTarget: Standalone
+<<<<<<< HEAD
     maxTextureSize: 2048
+=======
+    maxTextureSize: 32
+>>>>>>> b26792405c7ce2bb2f07dc44069a50d43207ac1c
     textureFormat: -3
     compressionQuality: 50
     allowsAlphaSplitting: 0
