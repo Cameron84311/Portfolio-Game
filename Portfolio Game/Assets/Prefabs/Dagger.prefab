@@ -22,8 +22,12 @@ GameObject:
   - 212: {fileID: 212000012069832248}
   - 50: {fileID: 50000012459113952}
   - 114: {fileID: 114000011035049942}
+<<<<<<< HEAD
   - 58: {fileID: 58000014268919716}
   m_Layer: 9
+=======
+  m_Layer: 10
+>>>>>>> 770ccd51dc39c98295481470e33b4b8f9b2ecdb1
   m_Name: Dagger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
