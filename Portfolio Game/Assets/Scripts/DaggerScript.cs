@@ -6,7 +6,7 @@ public class DaggerScript : MonoBehaviour {
     public float rotationSpeed = 10f;
 
 	void Start () {
-	
+        Destroy(gameObject, 5);
 	}
 
 	void Update () {
