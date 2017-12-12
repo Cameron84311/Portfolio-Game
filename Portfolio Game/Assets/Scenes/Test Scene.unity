@@ -243,31 +243,6 @@ Prefab:
       propertyPath: delaySlider
       value: 
       objectReference: {fileID: 1128148667}
-    - target: {fileID: 50000010076430926, guid: 03ec94c5a7c09d64b8f541dd7bab1e33,
-        type: 2}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 50000010076430926, guid: 03ec94c5a7c09d64b8f541dd7bab1e33,
-        type: 2}
-      propertyPath: m_SleepingMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 50000010076430926, guid: 03ec94c5a7c09d64b8f541dd7bab1e33,
-        type: 2}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000010017624248, guid: 03ec94c5a7c09d64b8f541dd7bab1e33,
-        type: 2}
-      propertyPath: reloadTime
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000010017624248, guid: 03ec94c5a7c09d64b8f541dd7bab1e33,
-        type: 2}
-      propertyPath: throwPower
-      value: 10
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03ec94c5a7c09d64b8f541dd7bab1e33, type: 2}
   m_IsPrefabParent: 0
@@ -320,6 +295,10 @@ Prefab:
       propertyPath: healthGUI
       value: 
       objectReference: {fileID: 840765304}
+    - target: {fileID: 1000011071588284, guid: 49b7d9b1440f0bc47b8d9b6ba1e35f49, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 49b7d9b1440f0bc47b8d9b6ba1e35f49, type: 2}
   m_IsPrefabParent: 0

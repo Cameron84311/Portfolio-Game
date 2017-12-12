@@ -26,7 +26,7 @@ GameObject:
   - 60: {fileID: 60000011056034126}
   - 114: {fileID: 114000010720749498}
   - 114: {fileID: 114000010017624248}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   - 92: {fileID: 92000010257286514}
   - 124: {fileID: 124000012741135680}
   - 81: {fileID: 81000012626070574}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -62,7 +62,7 @@ GameObject:
   - 4: {fileID: 4000011176072472}
   - 212: {fileID: 212000010881999800}
   - 60: {fileID: 60000012794449192}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,8 +238,7 @@ MonoBehaviour:
     type: 2}
   delaySlider: {fileID: 0}
   reloadTime: 200
-  horizontalVelocity: 10
-  verticalVelocity: 5
+  throwPower: 10
 --- !u!114 &114000010720749498
 MonoBehaviour:
   m_ObjectHideFlags: 1
