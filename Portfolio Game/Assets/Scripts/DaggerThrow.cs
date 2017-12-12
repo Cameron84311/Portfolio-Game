@@ -11,7 +11,8 @@ public class DaggerThrow : MonoBehaviour {
     public float throwPower = 10f;
     private float delay;
 
-	void Update () {
+	void Update ()
+    {
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePos.z = 0;
         mouseDir = mousePos - gameObject.transform.position;
@@ -23,6 +24,7 @@ public class DaggerThrow : MonoBehaviour {
             dagger.GetComponent<Rigidbody2D>().velocity = mouseDir * throwPower;
             delay = reloadTime;
         }
+
         delaySlider.GetComponent<Image>().fillAmount = delay/reloadTime;
         delay--;
 	}
