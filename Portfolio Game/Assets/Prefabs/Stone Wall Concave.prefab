@@ -22,7 +22,7 @@ GameObject:
   - 212: {fileID: 212000013685936714}
   - 61: {fileID: 61000011581579276}
   m_Layer: 0
-  m_Name: tile test 2 (2)
+  m_Name: Stone Wall Concave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
