@@ -2149,6 +2149,11 @@ Transform:
   - {fileID: 1852992804}
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!1 &693116831 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000011458015376, guid: 67e9634e1f7ffa842a4a9e6c79789e8b,
+    type: 2}
+  m_PrefabInternal: {fileID: 783808698}
 --- !u!1 &708149237 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000014003223554, guid: 03ec94c5a7c09d64b8f541dd7bab1e33,
@@ -2514,16 +2519,15 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011458015376, guid: 67e9634e1f7ffa842a4a9e6c79789e8b, type: 2}
+      propertyPath: m_Name
+      value: CooldownFade
+      objectReference: {fileID: 0}
     - target: {fileID: 114000011813527300, guid: 67e9634e1f7ffa842a4a9e6c79789e8b,
         type: 2}
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 789988083}
-    - target: {fileID: 224000012009409498, guid: 67e9634e1f7ffa842a4a9e6c79789e8b,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 67e9634e1f7ffa842a4a9e6c79789e8b, type: 2}
   m_IsPrefabParent: 0
@@ -2868,7 +2872,7 @@ Prefab:
         type: 2}
       propertyPath: delaySlider
       value: 
-      objectReference: {fileID: 1407006683}
+      objectReference: {fileID: 693116831}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03ec94c5a7c09d64b8f541dd7bab1e33, type: 2}
   m_IsPrefabParent: 0
@@ -4623,11 +4627,6 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 4, y: 1}
---- !u!1 &1407006683 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1000013148828494, guid: 67e9634e1f7ffa842a4a9e6c79789e8b,
-    type: 2}
-  m_PrefabInternal: {fileID: 783808698}
 --- !u!1 &1411692129
 GameObject:
   m_ObjectHideFlags: 0
