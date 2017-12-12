@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
 
-    private SpriteRenderer spriteRenderer;
+    private Image spriteRenderer;
     public GameObject mainCamera;
     public Sprite health0;
     public Sprite health1;
@@ -16,7 +17,7 @@ public class PlayerHealth : MonoBehaviour
     // Fetches the SpriteRenderer componenet and updates the players Health.
     void Start()
     {    
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponent<Image>();
         UpdateHealth();
     }
     
