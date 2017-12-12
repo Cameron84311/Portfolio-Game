@@ -19,7 +19,7 @@ public class DaggerThrow : MonoBehaviour {
             dagger.GetComponent<Rigidbody2D>().velocity = new Vector2(horizontalVelocity, verticalVelocity);
             delay = reloadTime;
         }
-        delaySlider.GetComponent<Slider>().value = -(delay/reloadTime)+1;
+        delaySlider.GetComponent<Image>().fillAmount = delay/reloadTime;
         delay--;
 	}
 }
