@@ -25,6 +25,7 @@ GameObject:
   - 114: {fileID: 114000011035049942}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - 58: {fileID: 58000014268919716}
 =======
 >>>>>>> parent of ca20776... destroy dagger on collision
@@ -32,6 +33,9 @@ GameObject:
 =======
   m_Layer: 10
 >>>>>>> 770ccd51dc39c98295481470e33b4b8f9b2ecdb1
+=======
+  m_Layer: 9
+>>>>>>> parent of 770ccd5... Pause Menu
   m_Name: Dagger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
