@@ -6,10 +6,15 @@ public class DaggerThrow : MonoBehaviour {
     private Vector3 mousePos;
     private Vector2 mouseDir;
     public GameObject daggerPrefab;
-    public GameObject delaySlider;
+    private GameObject fade;
     public float reloadTime = 200f;
     public float throwPower = 10f;
     private float delay;
+
+    void Start ()
+    {
+        fade = GameObject.Find("CooldownFade");
+    }
 
 	void Update ()
     {
@@ -24,8 +29,7 @@ public class DaggerThrow : MonoBehaviour {
             dagger.GetComponent<Rigidbody2D>().velocity = mouseDir * throwPower;
             delay = reloadTime;
         }
-
-        delaySlider.GetComponent<Image>().fillAmount = delay/reloadTime;
+        fade.GetComponent<Image>().fillAmount = delay/reloadTime;
         delay--;
 	}
 }

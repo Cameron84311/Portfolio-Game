@@ -5,7 +5,6 @@ public class PlayerHealth : MonoBehaviour
 {
 
     private Image spriteRenderer;
-    public GameObject healthGUI;
     public Sprite health0;
     public Sprite health1;
     public Sprite health2;
@@ -16,8 +15,8 @@ public class PlayerHealth : MonoBehaviour
  
     // Fetches the SpriteRenderer componenet and updates the players Health.
     void Start()
-    {    
-        spriteRenderer = healthGUI.GetComponent<Image>();
+    {
+        spriteRenderer = GameObject.Find("Health GUI").GetComponent<Image>();
         UpdateHealth();
     }
     

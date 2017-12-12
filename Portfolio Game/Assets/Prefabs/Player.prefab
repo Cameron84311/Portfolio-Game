@@ -21,12 +21,12 @@ GameObject:
   - 4: {fileID: 4000014214833584}
   - 212: {fileID: 212000010356862234}
   - 50: {fileID: 50000010076430926}
+  - 60: {fileID: 60000011056034126}
   - 114: {fileID: 114000013413036154}
   - 114: {fileID: 114000012094149104}
-  - 60: {fileID: 60000011056034126}
-  - 114: {fileID: 114000010720749498}
-  - 114: {fileID: 114000010017624248}
   - 114: {fileID: 114000012508168158}
+  - 114: {fileID: 114000010017624248}
+  - 114: {fileID: 114000010720749498}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -69,7 +69,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4000011176072472
 Transform:
   m_ObjectHideFlags: 1
@@ -237,7 +237,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   daggerPrefab: {fileID: 1000013821350316, guid: e75b045b104a1c04eb8f71c51810f30f,
     type: 2}
-  delaySlider: {fileID: 0}
   reloadTime: 200
   throwPower: 10
 --- !u!114 &114000010720749498
@@ -285,7 +284,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc472995135b793458d277bb1c712d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sheild: {fileID: 1000014003223554}
   rotationSpeed: 5
   joystickDeadzone: 0.2
 --- !u!114 &114000012508168158
@@ -299,7 +297,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d3ef3953ca0fd740aaf41188338c2ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthGUI: {fileID: 0}
   health0: {fileID: 21300006, guid: 377177e37383bf4429c81a130d17e0ce, type: 3}
   health1: {fileID: 21300004, guid: 377177e37383bf4429c81a130d17e0ce, type: 3}
   health2: {fileID: 21300002, guid: 377177e37383bf4429c81a130d17e0ce, type: 3}
