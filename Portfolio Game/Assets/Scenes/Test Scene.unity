@@ -191,6 +191,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010017624248, guid: 03ec94c5a7c09d64b8f541dd7bab1e33,
+        type: 2}
+      propertyPath: delaySlider
+      value: 
+      objectReference: {fileID: 1961871344}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03ec94c5a7c09d64b8f541dd7bab1e33, type: 2}
   m_IsPrefabParent: 0
@@ -420,6 +425,16 @@ Prefab:
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 1131083163}
+    - target: {fileID: 114000010960352718, guid: 67e9634e1f7ffa842a4a9e6c79789e8b,
+        type: 2}
+      propertyPath: m_Value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000012009409498, guid: 67e9634e1f7ffa842a4a9e6c79789e8b,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 67e9634e1f7ffa842a4a9e6c79789e8b, type: 2}
   m_IsPrefabParent: 0
@@ -647,6 +662,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
+--- !u!1 &1961871344 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000013148828494, guid: 67e9634e1f7ffa842a4a9e6c79789e8b,
+    type: 2}
+  m_PrefabInternal: {fileID: 840765303}
 --- !u!1 &2126658232 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000014003223554, guid: 03ec94c5a7c09d64b8f541dd7bab1e33,
