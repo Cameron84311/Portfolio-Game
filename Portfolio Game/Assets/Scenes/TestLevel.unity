@@ -6066,6 +6066,11 @@ Prefab:
       propertyPath: healthGUI
       value: 
       objectReference: {fileID: 333831095}
+    - target: {fileID: 114000011179343530, guid: 49b7d9b1440f0bc47b8d9b6ba1e35f49,
+        type: 2}
+      propertyPath: range2
+      value: 0.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 49b7d9b1440f0bc47b8d9b6ba1e35f49, type: 2}
   m_IsPrefabParent: 0
