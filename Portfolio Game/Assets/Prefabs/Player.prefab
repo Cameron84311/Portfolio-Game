@@ -236,6 +236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   daggerPrefab: {fileID: 1000011891778228, guid: e75b045b104a1c04eb8f71c51810f30f,
     type: 2}
+  delaySlider: {fileID: 0}
   reloadTime: 200
   horizontalVelocity: 10
   verticalVelocity: 5
