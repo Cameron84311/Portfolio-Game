@@ -5820,7 +5820,7 @@ GameObject:
   - 114: {fileID: 1338761438}
   - 114: {fileID: 1338761437}
   m_Layer: 5
-  m_Name: PlayButton
+  m_Name: ResumeButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5884,8 +5884,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1139930691}
-        m_MethodName: 
+      - m_Target: {fileID: 632035552}
+        m_MethodName: Pause
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8229,11 +8229,6 @@ Prefab:
       propertyPath: healthGUI
       value: 
       objectReference: {fileID: 333831095}
-    - target: {fileID: 114000011179343530, guid: 49b7d9b1440f0bc47b8d9b6ba1e35f49,
-        type: 2}
-      propertyPath: range2
-      value: 0.7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 49b7d9b1440f0bc47b8d9b6ba1e35f49, type: 2}
   m_IsPrefabParent: 0
