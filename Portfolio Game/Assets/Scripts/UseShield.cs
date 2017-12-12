@@ -4,8 +4,10 @@ public class UseShield : MonoBehaviour {
  
     private GameObject shield;
 
+    [Tooltip("Currently unused.")]
     public float rotationSpeed = 5f;
-	public float joystickDeadzone = 0.2f;
+    [Tooltip("The amount that the joystick moves before the shield appears")]
+    public float joystickDeadzone = 0.2f;
     
     float xAxis;
 	float yAxis;

@@ -2,6 +2,7 @@
 
 public class PlayerMovement : MonoBehaviour {
 
+    [Tooltip("Speed that the player moves.")]
     public float speed = 2;
     [HideInInspector]
     public float moveX;

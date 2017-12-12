@@ -8,7 +8,9 @@ public class PlayerAnimations : MonoBehaviour
     private PlayerMovement movement;
 
     [Header("Properties")]
+    [Tooltip("The delay between each frame of animation.")]
     public float animSpeed = 0.08f;
+    [Tooltip("How much the delay between animation fames is increased at slower speeds")]
     public float acceleration = 0.5f;
     [Header("Sprites")]
     public Sprite idle;
