@@ -5,11 +5,12 @@ public class DaggerThrow : MonoBehaviour {
 
     private Vector3 mousePos;
     private Vector2 mouseDir;
-    public GameObject daggerPrefab;
     private GameObject fade;
+    private float delay;
+
+    public GameObject daggerPrefab; 
     public float reloadTime = 200f;
     public float throwPower = 10f;
-    private float delay;
 
     void Start ()
     {

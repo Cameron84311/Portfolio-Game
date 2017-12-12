@@ -22,7 +22,7 @@ GameObject:
   - 212: {fileID: 212000011948887182}
   - 61: {fileID: 61000010491758106}
   m_Layer: 0
-  m_Name: tile test 1 (17)
+  m_Name: Stone Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

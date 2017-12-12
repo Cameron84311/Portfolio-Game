@@ -2,6 +2,7 @@
 
 public class HealthItem : MonoBehaviour {
 
+    [Range(1,3)]
     public int healAmount = 1;
 
     void OnCollisionEnter2D(Collision2D coll)

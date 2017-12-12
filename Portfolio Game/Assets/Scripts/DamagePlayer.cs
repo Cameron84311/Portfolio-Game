@@ -2,6 +2,7 @@
 
 public class DamagePlayer : MonoBehaviour {
 
+    [Range(1,3)]
     public int damageAmount = 1;
 
     // Checks for a collision and applies the collided gameObject to coll.

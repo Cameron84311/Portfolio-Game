@@ -3,8 +3,10 @@
 public class PlayerMovement : MonoBehaviour {
 
     public float speed = 2;
-	public float moveX;
-	public float moveY;
+    [HideInInspector]
+    public float moveX;
+    [HideInInspector]
+    public float moveY;
 
     void Update(){
         // Creates new Vector3 called moveDir with values of 0.

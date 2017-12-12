@@ -3,7 +3,8 @@
 public class UseShield : MonoBehaviour {
  
     private GameObject shield;
-	public float rotationSpeed = 5f;
+
+    public float rotationSpeed = 5f;
 	public float joystickDeadzone = 0.2f;
     
     float xAxis;
@@ -11,6 +12,7 @@ public class UseShield : MonoBehaviour {
 
     void Start()
     {
+        // Finds Shield GameObject and applies it to shield.
         shield = GameObject.Find("Shield");
     }
 

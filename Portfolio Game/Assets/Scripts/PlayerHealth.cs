@@ -5,33 +5,41 @@ public class PlayerHealth : MonoBehaviour
 {
 
     private Image spriteRenderer;
+    [Header("Sprites")]
     public Sprite health0;
     public Sprite health1;
     public Sprite health2;
     public Sprite health3;
+    [Header("Properties")]
+    [Range(1,3)]
     public int health = 3;
+    [Header("Camera")]
     public float rattlePower = 1f;
     public float rattleTime = 0.2f;
  
-    // Fetches the SpriteRenderer componenet and updates the players Health.
     void Start()
     {
+        // Finds the Health GUI and gets its sprite renderer.
         spriteRenderer = GameObject.Find("Health GUI").GetComponent<Image>();
+        // Updates the Health GUI.
         UpdateHealth();
     }
-    
-    // Removes one health and wobbles the GUI then it  
+
     public void DamagePlayer(int damageAmount)
     {
+        // Checks if the health is more than 0.
         if (health > 0)
         {
+            // Rattles the camera.
             JuiceBox.Rattle(Camera.main.gameObject, rattlePower, rattleTime);
+            // Damages the player by the damageAmount.
             health = health - damageAmount;
+            // Updates the Health GUI.
             UpdateHealth();
         }  
     }
    
-    // Updates the GUI to the current health.
+    // Updates the GUI to the sprite relevent the current health.
     public void UpdateHealth()
     {
         if (health == 3) { spriteRenderer.sprite = health3; }
@@ -42,9 +50,12 @@ public class PlayerHealth : MonoBehaviour
 
     public void HealPlayer(int healAmount)
     {
+        // Checks if health is less that 3.
         if (health < 3)
         {
+            //  Heals the player by the healAmount.
             health = health + healAmount;
+            // Updates the Health GUI.
             UpdateHealth();
         }
     }
