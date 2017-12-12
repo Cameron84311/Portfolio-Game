@@ -5,7 +5,7 @@ public class PlayerHealth : MonoBehaviour
 {
 
     private Image spriteRenderer;
-    public GameObject mainCamera;
+    public GameObject healthGUI;
     public Sprite health0;
     public Sprite health1;
     public Sprite health2;
@@ -17,7 +17,7 @@ public class PlayerHealth : MonoBehaviour
     // Fetches the SpriteRenderer componenet and updates the players Health.
     void Start()
     {    
-        spriteRenderer = GetComponent<Image>();
+        spriteRenderer = healthGUI.GetComponent<Image>();
         UpdateHealth();
     }
     
@@ -26,7 +26,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (health > 0)
         {
-            JuiceBox.Rattle(mainCamera, rattlePower, rattleTime);
+            JuiceBox.Rattle(Camera.main.gameObject, rattlePower, rattleTime);
             health--;
             UpdateHealth();
         }  

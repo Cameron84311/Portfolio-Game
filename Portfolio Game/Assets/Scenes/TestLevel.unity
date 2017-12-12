@@ -3972,6 +3972,11 @@ Prefab:
       value: 
       objectReference: {fileID: 1000013821350316, guid: e75b045b104a1c04eb8f71c51810f30f,
         type: 2}
+    - target: {fileID: 114000012508168158, guid: 03ec94c5a7c09d64b8f541dd7bab1e33,
+        type: 2}
+      propertyPath: healthGUI
+      value: 
+      objectReference: {fileID: 333831095}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03ec94c5a7c09d64b8f541dd7bab1e33, type: 2}
   m_IsPrefabParent: 0
