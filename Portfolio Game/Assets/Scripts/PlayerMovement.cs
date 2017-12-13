@@ -2,12 +2,9 @@
 
 public class PlayerMovement : MonoBehaviour {
 
-    [Tooltip("Speed that the player moves.")]
     public float speed = 2;
-    [HideInInspector]
-    public float moveX;
-    [HideInInspector]
-    public float moveY;
+	public float moveX;
+	public float moveY;
 
     void Update(){
         // Creates new Vector3 called moveDir with values of 0.

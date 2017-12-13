@@ -5,15 +5,11 @@ public class DaggerThrow : MonoBehaviour {
 
     private Vector3 mousePos;
     private Vector2 mouseDir;
-    private GameObject fade;
-    private float delay;
-
-    [Tooltip("The prefab of the dagger that will be thrown by the player.")]
     public GameObject daggerPrefab;
-    [Tooltip("How many frames pass before the player can throw another dagger.")]
+    private GameObject fade;
     public float reloadTime = 200f;
-    [Tooltip("The speed at which the dagger is thrown with.")]
     public float throwPower = 10f;
+    private float delay;
 
     void Start ()
 	{
