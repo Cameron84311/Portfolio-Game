@@ -12,9 +12,12 @@ public class PlayerHealth : MonoBehaviour
     public Sprite health3;
     [Header("Properties")]
     [Range(1,3)]
+	[Tooltip("How much health the player currently has.")]
     public int health = 3;
     [Header("Camera")]
+	[Tooltip("How long the camera will shake when damaged.")]
     public float rattlePower = 1f;
+	[Tooltip("How strong the camera will shake when damaged.")]
     public float rattleTime = 0.2f;
  
     void Start()

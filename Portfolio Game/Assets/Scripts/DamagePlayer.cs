@@ -3,6 +3,7 @@
 public class DamagePlayer : MonoBehaviour {
 
     [Range(1,3)]
+	[Tooltip("How much damage will be applied to the collided player.")]
     public int damageAmount = 1;
 
     // Checks for a collision and applies the collided gameObject to coll.
