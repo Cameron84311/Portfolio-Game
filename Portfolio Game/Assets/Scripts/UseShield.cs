@@ -30,9 +30,9 @@ public class UseShield : MonoBehaviour
 
     void Start()
     {
-        // Finds Shield GameObject and applies it to shield.
+        // Finds Shield GameObject.
         shield = GameObject.Find("Shield");
-        // Finds the CooldownFade gameObject in the GUI.
+        // Finds the CooldownFade GameObject in the GUI.
         fade = GameObject.Find("Shield CooldownFade");
     }
 
