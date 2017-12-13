@@ -18,7 +18,7 @@ public class DaggerThrow : MonoBehaviour {
     void Start ()
 	{
 		// Finds the CooldownFade gameObject in the GUI.
-        fade = GameObject.Find("CooldownFade");
+        fade = GameObject.Find("Dagger CooldownFade");
     }
 
 	void Update ()
