@@ -5,10 +5,20 @@ public class PlayerHealth : MonoBehaviour
 {
 
     private Image spriteRenderer;
+<<<<<<< HEAD
+=======
+    [Header("Sprites")]
+>>>>>>> parent of 5d160d5... changed name of space mine script
     public Sprite health0;
     public Sprite health1;
     public Sprite health2;
     public Sprite health3;
+<<<<<<< HEAD
+=======
+    [Header("Properties")]
+    [Range(1,3)]
+	[Tooltip("How much health the player currently has.")]
+>>>>>>> parent of 5d160d5... changed name of space mine script
     public int health = 3;
     public float rattlePower = 1f;
     public float rattleTime = 0.2f;

@@ -40,6 +40,7 @@ public class EnemyHealth : MonoBehaviour {
 	{
 		if (health == 0) 
 		{
+			// Destroyes the emeny.
 			Destroy (gameObject);
 		}
 		//if (health == 3) { spriteRenderer.sprite = health3; }
