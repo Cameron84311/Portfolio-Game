@@ -23,9 +23,16 @@ public class EnemyHealth : MonoBehaviour {
 
 	void Start()
 	{
-		// Finds the Health GUI and gets its sprite renderer.
-		//spriteRenderer = GameObject.Find("Health GUI").GetComponent<Image>();
-		// Updates the Health GUI.
+		/* 
+		Finds the Health GUI and gets its sprite renderer.
+		spriteRenderer = GameObject.Find("Health GUI").GetComponent<Image>();
+		Updates the Health GUI.
+		*/
+
+		if (health > maxHealth)
+		{
+			health = maxHealth;
+		}
 		UpdateHealth();
 	}
 
