@@ -15,6 +15,7 @@ public class DaggerScript : MonoBehaviour {
         gameObject.GetComponent<Rigidbody2D>().rotation = -rotationSpeed * Time.frameCount;
 	}
 
+	// Checks for collision.
     void OnCollisionEnter2D(Collision2D coll)
     {
         if (coll.gameObject.tag == "Enemy")
