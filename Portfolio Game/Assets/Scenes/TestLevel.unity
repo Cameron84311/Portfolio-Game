@@ -2333,12 +2333,18 @@ Transform:
   - {fileID: 472609963}
   - {fileID: 1718180503}
   - {fileID: 600883962}
+  - {fileID: 858818006}
   - {fileID: 318956807}
+  - {fileID: 1415350233}
   - {fileID: 615236204}
   - {fileID: 465295590}
+<<<<<<< HEAD
   - {fileID: 1415350233}
   - {fileID: 121419376}
   - {fileID: 858818006}
+=======
+  - {fileID: 121419376}
+>>>>>>> cff3468b4f8a881f480802b1a3489b47e2d209ec
   - {fileID: 855061601}
   - {fileID: 1373490768}
   - {fileID: 1518511436}
@@ -9240,6 +9246,19 @@ Prefab:
     - target: {fileID: 1000010321444740, guid: 67e9634e1f7ffa842a4a9e6c79789e8b, type: 2}
       propertyPath: m_IsActive
       value: 1
+<<<<<<< HEAD
+=======
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000014028090388, guid: 67e9634e1f7ffa842a4a9e6c79789e8b,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 448
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000013731058332, guid: 67e9634e1f7ffa842a4a9e6c79789e8b,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 307
+>>>>>>> cff3468b4f8a881f480802b1a3489b47e2d209ec
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 67e9634e1f7ffa842a4a9e6c79789e8b, type: 2}
