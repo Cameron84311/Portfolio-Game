@@ -3,7 +3,7 @@
 public class DaggerScript : MonoBehaviour {
 
     public float rotationSpeed = 10f;
-    public float damage = 1f;
+	public int damage = 1;
 
 	void Start () {
 		// When the dagger is spawned it will destroy itself after 5 seconds.
@@ -20,8 +20,14 @@ public class DaggerScript : MonoBehaviour {
     {
         if (coll.gameObject.tag == "Enemy")
         {
+			// Damages the enemy by the damage amount.
+			coll.gameObject.GetComponent<EnemyHealth> ().DamageEnemy (damage);
+
 			//coll.gameObject.GetComponent<FollowScript>();
 			//add knockback effect here
+
+			// Destroys the dagger.
+			Destroy(gameObject);
         } else
         {
 			// Destroyes dagger after hitting somthing thats not an enemy.

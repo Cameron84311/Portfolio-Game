@@ -7,6 +7,9 @@ public class EnemyHealth : MonoBehaviour {
 
 	[Header("Properties")]
 	[Range(1,3)]
+	[Tooltip("The max amount of health that the enemy has.")]
+	public int maxHealth = 3;
+	[Range(1,3)]
 	[Tooltip("How much health this enemy currently has.")]
 	public int health = 3;
 	//[Header("Sprites")]
@@ -38,6 +41,7 @@ public class EnemyHealth : MonoBehaviour {
 	// Updates the GUI to the sprite relevent the current health.
 	public void UpdateHealth()
 	{
+		// Checks if the health = 0.
 		if (health == 0) 
 		{
 			// Destroyes the emeny.
@@ -52,7 +56,7 @@ public class EnemyHealth : MonoBehaviour {
 	public void HealEnemy(int healAmount)
 	{
 		// Checks if health is less that 3.
-		if (health < 3)
+		if (health < maxHealth)
 		{
 			//  Heals the enemy by the healAmount.
 			health = health + healAmount;
