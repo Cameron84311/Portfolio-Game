@@ -250,6 +250,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc2307c253fb3584399fe1db750b705d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animSpeed: 0.08
+  acceleration: 0.5
   idle: {fileID: 21300000, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
   walk0: {fileID: 21300002, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
   walk1: {fileID: 21300006, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
@@ -267,12 +269,10 @@ MonoBehaviour:
   walkUp1: {fileID: 21300030, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
   walkUp2: {fileID: 21300032, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
   walkUp3: {fileID: 21300034, guid: 2410487a23ac3934d9e8d060ee731456, type: 3}
-  animSpeed: 0.08
   moveX: 0
   moveY: 0
   waitTimeX: 0
   waitTimeY: 0
-  acceleration: 0.5
 --- !u!114 &114000012094149104
 MonoBehaviour:
   m_ObjectHideFlags: 1
