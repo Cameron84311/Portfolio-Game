@@ -284,6 +284,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc472995135b793458d277bb1c712d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  regenSpeed: 3
+  useSpeed: 8
+  useDelay: 100
   rotationSpeed: 5
   joystickDeadzone: 0.2
 --- !u!114 &114000012508168158
