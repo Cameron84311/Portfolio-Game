@@ -551,7 +551,7 @@ Prefab:
     - target: {fileID: 224000013807612990, guid: 67e9634e1f7ffa842a4a9e6c79789e8b,
         type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 224000013807612990, guid: 67e9634e1f7ffa842a4a9e6c79789e8b,
         type: 2}
@@ -1379,6 +1379,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 236422934}
   - 212: {fileID: 236422933}
+  - 61: {fileID: 236422935}
   m_Layer: 0
   m_Name: Stone Wall Convex (6)
   m_TagString: Untagged
@@ -1432,6 +1433,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 632987377}
   m_RootOrder: 6
+--- !u!61 &236422935
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 236422932}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1001 &240376738
 Prefab:
   m_ObjectHideFlags: 0
@@ -1781,6 +1796,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 313647242}
   - 212: {fileID: 313647241}
+  - 61: {fileID: 313647243}
   m_Layer: 0
   m_Name: Stone Wall Convex (3)
   m_TagString: Untagged
@@ -1834,6 +1850,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 632987377}
   m_RootOrder: 2
+--- !u!61 &313647243
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 313647240}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1001 &334775258
 Prefab:
   m_ObjectHideFlags: 0
@@ -2443,7 +2473,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013904786546, guid: ade0f36fe9b67474691e006e93a7069a, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013904786546, guid: ade0f36fe9b67474691e006e93a7069a, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -3297,6 +3327,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 632987377}
   - 212: {fileID: 632987376}
+  - 61: {fileID: 632987378}
   m_Layer: 0
   m_Name: Stone Wall Convex
   m_TagString: Untagged
@@ -3365,7 +3396,21 @@ Transform:
   - {fileID: 1916011865}
   - {fileID: 921597472}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 8
+--- !u!61 &632987378
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 632987375}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1001 &635037197
 Prefab:
   m_ObjectHideFlags: 0
@@ -3424,6 +3469,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a66673920cb9af7458af683fcacc52c7, type: 2}
   m_IsPrefabParent: 0
+--- !u!224 &643997796 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224000011106896546, guid: 56a49c113508bfb4e847e5abb2fdd149,
+    type: 2}
+  m_PrefabInternal: {fileID: 962634798}
 --- !u!1001 &651600609
 Prefab:
   m_ObjectHideFlags: 0
@@ -3694,6 +3744,53 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a66673920cb9af7458af683fcacc52c7, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &677894271
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4000010113473188, guid: 9e4547e2fc69dc849add42acb9b93401, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 567.0522
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010113473188, guid: 9e4547e2fc69dc849add42acb9b93401, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 292.5072
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010113473188, guid: 9e4547e2fc69dc849add42acb9b93401, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 13.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010113473188, guid: 9e4547e2fc69dc849add42acb9b93401, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010113473188, guid: 9e4547e2fc69dc849add42acb9b93401, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010113473188, guid: 9e4547e2fc69dc849add42acb9b93401, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010113473188, guid: 9e4547e2fc69dc849add42acb9b93401, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010113473188, guid: 9e4547e2fc69dc849add42acb9b93401, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010544821626, guid: 9e4547e2fc69dc849add42acb9b93401,
+        type: 2}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 643997796}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 9e4547e2fc69dc849add42acb9b93401, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &698500938
 GameObject:
@@ -4619,6 +4716,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 921597472}
   - 212: {fileID: 921597473}
+  - 61: {fileID: 921597474}
   m_Layer: 0
   m_Name: Stone Wall Convex (13)
   m_TagString: Untagged
@@ -4672,6 +4770,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &921597474
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 921597471}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1001 &928773393
 Prefab:
   m_ObjectHideFlags: 0
@@ -4929,6 +5041,106 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a66673920cb9af7458af683fcacc52c7, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &962634798
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 224000011106896546, guid: 56a49c113508bfb4e847e5abb2fdd149,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011106896546, guid: 56a49c113508bfb4e847e5abb2fdd149,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011106896546, guid: 56a49c113508bfb4e847e5abb2fdd149,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011106896546, guid: 56a49c113508bfb4e847e5abb2fdd149,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011106896546, guid: 56a49c113508bfb4e847e5abb2fdd149,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011106896546, guid: 56a49c113508bfb4e847e5abb2fdd149,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011106896546, guid: 56a49c113508bfb4e847e5abb2fdd149,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011106896546, guid: 56a49c113508bfb4e847e5abb2fdd149,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011106896546, guid: 56a49c113508bfb4e847e5abb2fdd149,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011106896546, guid: 56a49c113508bfb4e847e5abb2fdd149,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011106896546, guid: 56a49c113508bfb4e847e5abb2fdd149,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011106896546, guid: 56a49c113508bfb4e847e5abb2fdd149,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011106896546, guid: 56a49c113508bfb4e847e5abb2fdd149,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011106896546, guid: 56a49c113508bfb4e847e5abb2fdd149,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011106896546, guid: 56a49c113508bfb4e847e5abb2fdd149,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011106896546, guid: 56a49c113508bfb4e847e5abb2fdd149,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011106896546, guid: 56a49c113508bfb4e847e5abb2fdd149,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011106896546, guid: 56a49c113508bfb4e847e5abb2fdd149,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 56a49c113508bfb4e847e5abb2fdd149, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &967161583
 Prefab:
@@ -5977,7 +6189,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014251449256, guid: a66673920cb9af7458af683fcacc52c7, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000014251449256, guid: a66673920cb9af7458af683fcacc52c7, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -6378,6 +6590,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1242236279}
   - 212: {fileID: 1242236278}
+  - 61: {fileID: 1242236280}
   m_Layer: 0
   m_Name: Stone Wall Convex (2)
   m_TagString: Untagged
@@ -6431,6 +6644,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 632987377}
   m_RootOrder: 1
+--- !u!61 &1242236280
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1242236277}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1001 &1250839925
 Prefab:
   m_ObjectHideFlags: 0
@@ -6571,7 +6798,7 @@ Transform:
   - {fileID: 88748146}
   - {fileID: 413128659}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 7
 --- !u!1001 &1258943132
 Prefab:
   m_ObjectHideFlags: 0
@@ -6672,6 +6899,25 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a66673920cb9af7458af683fcacc52c7, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1268771899 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000010366814152, guid: ade0f36fe9b67474691e006e93a7069a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1795552097}
+--- !u!61 &1268771902
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1268771899}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1001 &1279860782
 Prefab:
   m_ObjectHideFlags: 0
@@ -6992,6 +7238,48 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a66673920cb9af7458af683fcacc52c7, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &1353566686
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4000010279901768, guid: a790ac3c7861c12458c57123e681d3dc, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010279901768, guid: a790ac3c7861c12458c57123e681d3dc, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010279901768, guid: a790ac3c7861c12458c57123e681d3dc, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010279901768, guid: a790ac3c7861c12458c57123e681d3dc, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010279901768, guid: a790ac3c7861c12458c57123e681d3dc, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010279901768, guid: a790ac3c7861c12458c57123e681d3dc, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010279901768, guid: a790ac3c7861c12458c57123e681d3dc, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010279901768, guid: a790ac3c7861c12458c57123e681d3dc, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: a790ac3c7861c12458c57123e681d3dc, type: 2}
+  m_IsPrefabParent: 0
 --- !u!4 &1357106572 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000013904786546, guid: ade0f36fe9b67474691e006e93a7069a,
@@ -7006,6 +7294,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1359815124}
   - 212: {fileID: 1359815123}
+  - 61: {fileID: 1359815125}
   m_Layer: 0
   m_Name: Stone Wall Convex (5)
   m_TagString: Untagged
@@ -7059,6 +7348,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 632987377}
   m_RootOrder: 4
+--- !u!61 &1359815125
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1359815122}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1001 &1376324659
 Prefab:
   m_ObjectHideFlags: 0
@@ -8440,6 +8743,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1644212175}
   - 212: {fileID: 1644212176}
+  - 61: {fileID: 1644212177}
   m_Layer: 0
   m_Name: Stone Wall Convex (11)
   m_TagString: Untagged
@@ -8493,6 +8797,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &1644212177
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1644212174}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1001 &1668445529
 Prefab:
   m_ObjectHideFlags: 0
@@ -8605,6 +8923,25 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &1676715336 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000010366814152, guid: ade0f36fe9b67474691e006e93a7069a,
+    type: 2}
+  m_PrefabInternal: {fileID: 65713101}
+--- !u!61 &1676715339
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1676715336}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1001 &1693157535
 Prefab:
   m_ObjectHideFlags: 0
@@ -9166,7 +9503,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014214833584, guid: 03ec94c5a7c09d64b8f541dd7bab1e33, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03ec94c5a7c09d64b8f541dd7bab1e33, type: 2}
@@ -9346,6 +9683,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1807163331}
   - 212: {fileID: 1807163330}
+  - 61: {fileID: 1807163332}
   m_Layer: 0
   m_Name: Stone Wall Convex (8)
   m_TagString: Untagged
@@ -9399,6 +9737,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 632987377}
   m_RootOrder: 9
+--- !u!61 &1807163332
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1807163329}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1 &1809336120
 GameObject:
   m_ObjectHideFlags: 0
@@ -9408,6 +9760,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1809336122}
   - 212: {fileID: 1809336121}
+  - 61: {fileID: 1809336123}
   m_Layer: 0
   m_Name: Stone Wall Convex (7)
   m_TagString: Untagged
@@ -9461,6 +9814,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 632987377}
   m_RootOrder: 7
+--- !u!61 &1809336123
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1809336120}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1001 &1810336487
 Prefab:
   m_ObjectHideFlags: 0
@@ -10230,6 +10597,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1915792985}
   - 212: {fileID: 1915792984}
+  - 61: {fileID: 1915792986}
   m_Layer: 0
   m_Name: Stone Wall Convex (1)
   m_TagString: Untagged
@@ -10283,6 +10651,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 632987377}
   m_RootOrder: 0
+--- !u!61 &1915792986
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1915792983}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1 &1916011864
 GameObject:
   m_ObjectHideFlags: 0
@@ -10292,6 +10674,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1916011865}
   - 212: {fileID: 1916011866}
+  - 61: {fileID: 1916011867}
   m_Layer: 0
   m_Name: Stone Wall Convex (12)
   m_TagString: Untagged
@@ -10345,6 +10728,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &1916011867
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1916011864}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1001 &1921649098
 Prefab:
   m_ObjectHideFlags: 0
@@ -10662,6 +11059,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1965616955}
   - 212: {fileID: 1965616956}
+  - 61: {fileID: 1965616957}
   m_Layer: 0
   m_Name: Stone Wall Convex (10)
   m_TagString: Untagged
@@ -10715,6 +11113,39 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &1965616957
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1965616954}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+--- !u!1 &1975664559 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000010366814152, guid: ade0f36fe9b67474691e006e93a7069a,
+    type: 2}
+  m_PrefabInternal: {fileID: 526645044}
+--- !u!61 &1975664562
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1975664559}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1 &1977072753
 GameObject:
   m_ObjectHideFlags: 0
@@ -10724,6 +11155,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1977072754}
   - 212: {fileID: 1977072755}
+  - 61: {fileID: 1977072756}
   m_Layer: 0
   m_Name: Stone Wall Convex (9)
   m_TagString: Untagged
@@ -10777,6 +11209,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &1977072756
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1977072753}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1001 &1990536956
 Prefab:
   m_ObjectHideFlags: 0
@@ -11234,6 +11680,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2063964943}
   - 212: {fileID: 2063964942}
+  - 61: {fileID: 2063964944}
   m_Layer: 0
   m_Name: Stone Wall Convex (4)
   m_TagString: Untagged
@@ -11287,6 +11734,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 632987377}
   m_RootOrder: 3
+--- !u!61 &2063964944
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2063964941}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1001 &2083035206
 Prefab:
   m_ObjectHideFlags: 0
