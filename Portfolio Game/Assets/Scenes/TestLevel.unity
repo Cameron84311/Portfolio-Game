@@ -2423,10 +2423,10 @@ Transform:
   - {fileID: 826436661}
   - {fileID: 1468643242}
   - {fileID: 1040373897}
-  - {fileID: 1476663109}
   - {fileID: 768179345}
   - {fileID: 1735512684}
   - {fileID: 1497887993}
+  - {fileID: 1476663109}
   - {fileID: 424517292}
   - {fileID: 1303439446}
   - {fileID: 472139151}
@@ -10115,7 +10115,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000010321444740, guid: 67e9634e1f7ffa842a4a9e6c79789e8b, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224000014028090388, guid: 67e9634e1f7ffa842a4a9e6c79789e8b,
         type: 2}
