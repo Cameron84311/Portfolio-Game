@@ -6,13 +6,6 @@ public class PlayerAnimations : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
     private PlayerMovement movement;
-
-    [Header("Properties")]
-    [Tooltip("The delay between each frame of animation.")]
-    public float animSpeed = 0.08f;
-    [Tooltip("How much the delay between animation fames is increased at slower speeds")]
-    public float acceleration = 0.5f;
-    [Header("Sprites")]
     public Sprite idle;
     public Sprite walk0;
     public Sprite walk1;
@@ -30,16 +23,12 @@ public class PlayerAnimations : MonoBehaviour
     public Sprite walkUp1;
     public Sprite walkUp2;
     public Sprite walkUp3;
-
-    [HideInInspector]
+    public float animSpeed = 0.08f;
     public float moveX;
-    [HideInInspector]
     public float moveY;
-    [HideInInspector]
     public float waitTimeX;
-    [HideInInspector]
     public float waitTimeY;
-
+    public float acceleration = 0.5f;
 
     void Start()
     {

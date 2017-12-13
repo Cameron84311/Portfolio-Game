@@ -20,8 +20,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000012428109772}
   - 212: {fileID: 212000010543389792}
-  - 61: {fileID: 61000011338532068}
   - 114: {fileID: 114000011309913716}
+  - 61: {fileID: 61000011338532068}
   m_Layer: 0
   m_Name: Sandwich
   m_TagString: Untagged
