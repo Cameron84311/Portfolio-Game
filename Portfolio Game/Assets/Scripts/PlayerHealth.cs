@@ -5,27 +5,10 @@ public class PlayerHealth : MonoBehaviour
 {
 
     private Image spriteRenderer;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    [Header("Sprites")]
->>>>>>> parent of 5d160d5... changed name of space mine script
-    public Sprite health0;
-    public Sprite health1;
-    public Sprite health2;
-    public Sprite health3;
-<<<<<<< HEAD
-=======
-    [Header("Properties")]
-    [Range(1,3)]
-	[Tooltip("How much health the player currently has.")]
->>>>>>> parent of 5d160d5... changed name of space mine script
-=======
 
     [Header("Properties")]
     [Range(1,3)]
 	[Tooltip("How much health the player currently has.")]
->>>>>>> parent of 76d6625... Merge branch 'master' of https://github.com/JustRyanW/Portfolio-Game
     public int health = 3;
     [Header("Camera")]
 	[Tooltip("How long the camera will shake when damaged.")]
