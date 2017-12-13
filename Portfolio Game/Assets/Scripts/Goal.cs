@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Goal : MonoBehaviour { 
 
-	public void OnCollision2D()
+	 void OnCollision2D()
 	{
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 	}
