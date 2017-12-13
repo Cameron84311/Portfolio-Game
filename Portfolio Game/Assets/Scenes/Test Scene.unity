@@ -129,26 +129,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114000012094149104, guid: 03ec94c5a7c09d64b8f541dd7bab1e33,
-        type: 2}
-      propertyPath: useSpeed
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012094149104, guid: 03ec94c5a7c09d64b8f541dd7bab1e33,
-        type: 2}
-      propertyPath: regenSpeed
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012094149104, guid: 03ec94c5a7c09d64b8f541dd7bab1e33,
-        type: 2}
-      propertyPath: useDelay
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012094149104, guid: 03ec94c5a7c09d64b8f541dd7bab1e33,
-        type: 2}
-      propertyPath: delayed
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03ec94c5a7c09d64b8f541dd7bab1e33, type: 2}
   m_IsPrefabParent: 0
@@ -294,16 +274,6 @@ Prefab:
     - target: {fileID: 4000011227749286, guid: 49b7d9b1440f0bc47b8d9b6ba1e35f49, type: 2}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012127367226, guid: 49b7d9b1440f0bc47b8d9b6ba1e35f49,
-        type: 2}
-      propertyPath: maxHealth
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012127367226, guid: 49b7d9b1440f0bc47b8d9b6ba1e35f49,
-        type: 2}
-      propertyPath: health
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 49b7d9b1440f0bc47b8d9b6ba1e35f49, type: 2}
@@ -528,16 +498,6 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000011872591078, guid: 67e9634e1f7ffa842a4a9e6c79789e8b,
-        type: 2}
-      propertyPath: m_FillAmount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000011872591078, guid: 67e9634e1f7ffa842a4a9e6c79789e8b,
-        type: 2}
-      propertyPath: m_FillClockwise
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 67e9634e1f7ffa842a4a9e6c79789e8b, type: 2}
