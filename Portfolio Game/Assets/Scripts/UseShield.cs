@@ -59,6 +59,7 @@ public class UseShield : MonoBehaviour
         {
             // Creates a new Vector3 called dir and gets the mouse position in the world..
             Vector3 dir = Input.mousePosition - Camera.main.WorldToScreenPoint(shield.transform.position);
+            // Gets the angle from the player to the mouse.
             float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
             // Makes the Shield rotate towards the mouse.
             shield.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
